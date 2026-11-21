@@ -1,4 +1,4 @@
-# HUN · Flujo Inteligente — dashboard del Data Challenge HUN
+# HUN · Flujo Inteligente Data Challenge HUN
 
 Presentación interactiva (Dash + Three.js + GSAP) con los resultados de los módulos M2–M7 del Data Challenge del Hospital Universidad del Norte.
 
