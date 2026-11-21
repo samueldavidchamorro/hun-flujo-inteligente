@@ -1,0 +1,78 @@
+{
+  "temporales": [
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "es_hora_pico_urgencias",
+    "turno",
+    "es_fin_de_semana",
+    "es_festivo",
+    "es_dia_no_habil",
+    "tras_festivo",
+    "primer_dia_habil"
+  ],
+  "ocupacion_t1_servicio": [
+    "ocupacion_t1",
+    "ocupacion_media_3h",
+    "ocupacion_media_6h",
+    "ocupacion_media_12h",
+    "ocupacion_media_24h",
+    "ocupacion_max_24h",
+    "ocupacion_std_24h",
+    "ocupacion_tendencia_3h",
+    "frac_horas_sobre_umbral_24h",
+    "ocupacion_semana_previa",
+    "censo_t1",
+    "llegadas_t1",
+    "llegadas_suma_4h",
+    "llegadas_suma_24h"
+  ],
+  "ocupacion_t1_snapshot": [
+    "srv_ocupacion_t1",
+    "srv_ocupacion_media_3h",
+    "srv_ocupacion_media_6h",
+    "srv_ocupacion_media_12h",
+    "srv_ocupacion_media_24h",
+    "srv_ocupacion_max_24h",
+    "srv_ocupacion_std_24h",
+    "srv_ocupacion_tendencia_3h",
+    "srv_frac_horas_sobre_umbral_24h",
+    "srv_ocupacion_semana_previa",
+    "srv_censo_t1",
+    "srv_llegadas_t1",
+    "srv_llegadas_suma_4h",
+    "srv_llegadas_suma_24h"
+  ],
+  "categoricas": [
+    "turno"
+  ],
+  "config": {
+    "horas_pico": [
+      [
+        7,
+        10
+      ],
+      [
+        17,
+        20
+      ]
+    ],
+    "ventanas_h": [
+      3,
+      6,
+      12,
+      24
+    ],
+    "ventanas_llegadas_h": [
+      4,
+      24
+    ],
+    "lag_estacional_h": 168,
+    "umbral_por_servicio": {
+      "hospitalizacion": 0.95,
+      "urgencias_observacion": 0.85
+    }
+  },
+  "verificacion_fuga_ok": true
+}

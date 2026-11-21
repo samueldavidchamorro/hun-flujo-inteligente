@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: hun-flujo-inteligente
+    runtime: python
+    plan: free
+    region: oregon
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn plataforma.app:server --bind 0.0.0.0:$PORT --workers 2 --timeout 120
+    healthCheckPath: /api/gemelo
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.0

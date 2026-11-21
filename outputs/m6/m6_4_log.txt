@@ -1,0 +1,42 @@
+[20:44:05] Cargando maestro (M5), pliegues (6.1) y mejores hiperparámetros (6.3)
+[20:44:09] Modelos (mejor de cada familia): ['logreg_lasso', 'knn', 'naive_bayes', 'cart', 'random_forest', 'lightgbm', 'svm_rbf']
+[20:46:03] Preprocesador ajustado por pliegue con todo el entrenamiento (541,260 filas): 115 s
+[20:46:23] KNN: submuestra de 108,495 filas (20% de los pacientes)
+[20:47:01] logreg_lasso  train 0.7158 · val 0.7146 (± 0.0031) · brecha +0.0012 · 0.6 min
+[21:38:28] knn           train 0.9998 · val 0.7055 (± 0.0032) · brecha +0.2943 · 51.4 min
+[21:38:33] naive_bayes   train 0.6651 · val 0.6644 (± 0.0027) · brecha +0.0008 · 0.1 min
+[21:40:15] cart          train 0.7320 · val 0.7220 (± 0.0021) · brecha +0.0100 · 1.7 min
+[22:22:46] random_forest train 0.8399 · val 0.7428 (± 0.0026) · brecha +0.0971 · 42.5 min
+[22:27:19] lightgbm      train 0.7668 · val 0.7418 (± 0.0026) · brecha +0.0251 · 4.5 min
+[23:06:17] svm_rbf       train 0.7315 · val 0.7270 (± 0.0031) · brecha +0.0045 · 39.0 min
+
+⚠️  SOBREAJUSTE · knn: train_auc 0.9998 − val_auc 0.7055 = brecha 0.2943 > 0.05
+⚠️  SOBREAJUSTE · random_forest: train_auc 0.8399 − val_auc 0.7428 = brecha 0.0971 > 0.05
+
+[23:06:18] Curvas de aprendizaje para ['random_forest', 'lightgbm', 'svm_rbf']
+[23:28:10]   random_forest listo
+[23:32:43]   lightgbm listo
+[23:57:47]   svm_rbf listo
+[23:57:50] Ajuste final con todo el entrenamiento
+[23:58:13]   preprocesador final: 22 s
+[23:58:22]   logreg_lasso  → models/logreg_lasso_pipeline.joblib (0.5 MB, 0.1 min)
+[23:58:29]   knn           → models/knn_pipeline.joblib (30.1 MB, 0.1 min)
+[23:58:30]   naive_bayes   → models/naive_bayes_pipeline.joblib (0.5 MB, 0.0 min)
+[23:58:51]   cart          → models/cart_pipeline.joblib (0.6 MB, 0.3 min)
+[00:07:43]   random_forest → models/random_forest_pipeline.joblib (114.4 MB, 8.8 min)
+[00:08:30]   lightgbm      → models/lightgbm_pipeline.joblib (5.6 MB, 0.8 min)
+[00:18:06]   svm_rbf       → models/svm_rbf_pipeline.joblib (3.7 MB, 9.6 min)
+
+Resumen (model_benchmark_summary.csv):
+       modelo  train_auc  val_auc  brecha_train_val  sobreajuste_gt_005  auc_oof  auc_oof_servicio_tau    mb
+random_forest     0.8399   0.7428            0.0971                True   0.7428                0.6942 114.4
+     lightgbm     0.7668   0.7418            0.0251               False   0.7418                0.6937   5.6
+      svm_rbf     0.7315   0.7270            0.0045               False   0.7270                0.6602   3.7
+         cart     0.7320   0.7220            0.0100               False   0.7222                0.6486   0.6
+ logreg_lasso     0.7158   0.7146            0.0012               False   0.7146                0.6275   0.5
+          knn     0.9998   0.7055            0.2943                True   0.7054                0.6117  30.1
+  naive_bayes     0.6651   0.6644            0.0008               False   0.6643                0.5724   0.5
+
+⚠️  Modelos con brecha > 0.05: knn, random_forest
+[00:18:06] Listo
+EXIT 0

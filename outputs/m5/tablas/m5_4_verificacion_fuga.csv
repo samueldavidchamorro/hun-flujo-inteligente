@@ -1,0 +1,2 @@
+medianas_num,medias_num,desv_num,categorias_onehot,vocabulario_dx,predict_no_modifica_parametros,modelo_independiente_de_validacion,filas_independientes_del_lote,ok
+True,True,True,True,True,True,True,True,True

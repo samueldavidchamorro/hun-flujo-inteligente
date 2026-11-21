@@ -1,0 +1,107 @@
+{
+  "num_cols": [
+    "horas_desde_ingreso",
+    "edad",
+    "hora_del_dia",
+    "n_dx_historia",
+    "n_dx_distintos_historia",
+    "n_dx_30d",
+    "n_visitas_365d",
+    "n_hospitalizaciones_previas",
+    "horas_desde_ultima_alta_hosp",
+    "censo_servicio_t_menos_1h",
+    "ocupacion_servicio_t_menos_1h",
+    "llegadas_servicio_t_menos_1h"
+  ],
+  "cat_cols": [
+    "servicio",
+    "sexo",
+    "origen_urgencias",
+    "dia_semana",
+    "mes",
+    "fin_de_semana",
+    "sin_dx_historia",
+    "nunca_hospitalizado"
+  ],
+  "lab_cols": [
+    "n_mediciones_24h",
+    "n_mediciones_historia",
+    "sin_mediciones_24h",
+    "sin_mediciones_historia",
+    "has_measurement_4016928",
+    "has_measurement_4324383",
+    "has_measurement_4074649",
+    "has_measurement_46272908",
+    "has_measurement_3019550",
+    "has_measurement_4245152",
+    "has_measurement_4099313",
+    "has_measurement_3014576",
+    "has_measurement_4245261",
+    "has_measurement_44809202",
+    "has_measurement_3013826",
+    "has_measurement_4146380",
+    "has_measurement_4263457",
+    "has_measurement_3045524",
+    "has_measurement_4239236",
+    "has_measurement_40547237",
+    "has_measurement_4213582",
+    "has_measurement_4246879",
+    "has_measurement_4184637",
+    "has_measurement_42529218"
+  ],
+  "excluidas": {
+    "id": [
+      "snapshot_id",
+      "episodio_id",
+      "person_id"
+    ],
+    "target": [
+      "y_target_los_largo",
+      "y_los_h",
+      "y_los_restante_h",
+      "y_fin_episodio"
+    ],
+    "control": [
+      "es_entrenamiento",
+      "en_riesgo_truncamiento",
+      "en_periodo_estable",
+      "umbral_los_h"
+    ],
+    "tiempo": [
+      "snapshot_time",
+      "inicio_episodio"
+    ]
+  },
+  "banderas_nuevas": [
+    "sin_mediciones_24h",
+    "sin_mediciones_historia",
+    "sin_dx_historia",
+    "nunca_hospitalizado",
+    "has_measurement_4016928",
+    "has_measurement_4324383",
+    "has_measurement_4074649",
+    "has_measurement_46272908",
+    "has_measurement_3019550",
+    "has_measurement_4245152",
+    "has_measurement_4099313",
+    "has_measurement_3014576",
+    "has_measurement_4245261",
+    "has_measurement_44809202",
+    "has_measurement_3013826",
+    "has_measurement_4146380",
+    "has_measurement_4263457",
+    "has_measurement_3045524",
+    "has_measurement_4239236",
+    "has_measurement_40547237",
+    "has_measurement_4213582",
+    "has_measurement_4246879",
+    "has_measurement_4184637",
+    "has_measurement_42529218"
+  ],
+  "config": {
+    "top_k": 20,
+    "ventana_horas": 24.0,
+    "col_concepto": "measurement_concept_id",
+    "measurement_disponible": true
+  }
+}

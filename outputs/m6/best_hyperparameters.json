@@ -1,0 +1,124 @@
+{
+  "metrica": "AUC-ROC medio fuera de muestra en StratifiedGroupKFold(5) por person_id",
+  "n_trials_objetivo": 50,
+  "frac_pacientes": 0.2,
+  "frac_pacientes_knn": 0.05,
+  "timeout_modelo_s": 1800.0,
+  "sampler": "TPESampler(seed=42, n_startup_trials=10)",
+  "pruner": "MedianPruner(n_startup_trials=5, n_warmup_steps=1)",
+  "cv": "pliegues de data/m6/pliegues_m6_1.parquet (StratifiedGroupKFold(5) por person_id)",
+  "modelos": {
+    "naive_bayes": {
+      "mejor_auc_cv": 0.6661991202770283,
+      "auc_std_pliegues": 0.006365648545736649,
+      "auc_medio_servicio_tau": 0.5708137221393682,
+      "hiperparametros": {
+        "modelo__var_smoothing": 0.010434959898916737
+      }
+    },
+    "logreg_ridge": {
+      "mejor_auc_cv": 0.7143957781116743,
+      "auc_std_pliegues": 0.004576807491519262,
+      "auc_medio_servicio_tau": 0.6209571206698803,
+      "hiperparametros": {
+        "modelo__C": 0.05058553231235235,
+        "modelo__class_weight": "balanced"
+      }
+    },
+    "cart": {
+      "mejor_auc_cv": 0.7139706501463872,
+      "auc_std_pliegues": 0.005840430858372485,
+      "auc_medio_servicio_tau": 0.6283102979580858,
+      "hiperparametros": {
+        "modelo__max_depth": 10,
+        "modelo__min_samples_leaf": 341,
+        "modelo__ccp_alpha": 1.3487019289839087e-06,
+        "modelo__criterion": "entropy",
+        "modelo__class_weight": null
+      }
+    },
+    "logreg_lasso": {
+      "mejor_auc_cv": 0.7146349619648039,
+      "auc_std_pliegues": 0.004664785625895133,
+      "auc_medio_servicio_tau": 0.6229558641477392,
+      "hiperparametros": {
+        "modelo__C": 0.10218259491478436,
+        "modelo__class_weight": "balanced"
+      }
+    },
+    "svm_lineal": {
+      "mejor_auc_cv": 0.7143375699765308,
+      "auc_std_pliegues": 0.004443637471491199,
+      "auc_medio_servicio_tau": 0.6213923513676523,
+      "hiperparametros": {
+        "modelo__C": 0.008840457520314437,
+        "modelo__class_weight": null
+      }
+    },
+    "random_forest": {
+      "mejor_auc_cv": 0.7339540090654555,
+      "auc_std_pliegues": 0.004997941324757001,
+      "auc_medio_servicio_tau": 0.6702577490830459,
+      "hiperparametros": {
+        "modelo__n_estimators": 428,
+        "modelo__max_depth": 20,
+        "modelo__min_samples_leaf": 24,
+        "modelo__max_features": 0.3,
+        "modelo__max_samples": 0.6761745264895063,
+        "modelo__class_weight": "balanced"
+      }
+    },
+    "lightgbm": {
+      "mejor_auc_cv": 0.7368038545683525,
+      "auc_std_pliegues": 0.00452727911103285,
+      "auc_medio_servicio_tau": 0.6736254247848763,
+      "hiperparametros": {
+        "modelo__n_estimators": 586,
+        "modelo__learning_rate": 0.0054399152923307595,
+        "modelo__num_leaves": 166,
+        "modelo__min_child_samples": 204,
+        "modelo__subsample": 0.9941490174420149,
+        "modelo__colsample_bytree": 0.9365845126461928,
+        "modelo__reg_alpha": 0.004579789861335891,
+        "modelo__reg_lambda": 3.030865515745902e-07
+      }
+    },
+    "xgboost": {
+      "mejor_auc_cv": 0.7361214063685858,
+      "auc_std_pliegues": 0.004072279079198055,
+      "auc_medio_servicio_tau": 0.6726872568315237,
+      "hiperparametros": {
+        "modelo__n_estimators": 858,
+        "modelo__learning_rate": 0.013157565942854929,
+        "modelo__max_depth": 10,
+        "modelo__min_child_weight": 1.90356248723545,
+        "modelo__gamma": 1.596709501949824e-07,
+        "modelo__subsample": 0.9070538991039828,
+        "modelo__colsample_bytree": 0.9059000199252315,
+        "modelo__reg_alpha": 2.4281593553583587,
+        "modelo__reg_lambda": 0.14657572782087483
+      }
+    },
+    "svm_rbf": {
+      "mejor_auc_cv": 0.7240530050688085,
+      "auc_std_pliegues": 0.0031539313425558257,
+      "auc_medio_servicio_tau": 0.6452296430087223,
+      "hiperparametros": {
+        "modelo__nystroem__gamma": 0.003148911647956862,
+        "modelo__nystroem__n_components": 893,
+        "modelo__svm__C": 2.465832945854912,
+        "modelo__svm__class_weight": null
+      }
+    },
+    "knn": {
+      "mejor_auc_cv": 0.6968680766806092,
+      "auc_std_pliegues": 0.007832645362401029,
+      "auc_medio_servicio_tau": 0.5835197776729221,
+      "hiperparametros": {
+        "modelo__n_neighbors": 175,
+        "modelo__weights": "distance",
+        "modelo__leaf_size": 43
+      }
+    }
+  }
+}

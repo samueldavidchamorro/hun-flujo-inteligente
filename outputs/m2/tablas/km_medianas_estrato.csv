@@ -1,0 +1,17 @@
+servicio,variable,nivel,n,mediana_h,IC95_inf,IC95_sup,P(LOS > umbral)
+Hospitalización,origen,Desde urgencias,43119,71.24,70.65,71.78,0.25893457640483314
+Hospitalización,origen,Ingreso directo,1298,34.29,29.23,37.76,0.18258859784283527
+Hospitalización,grupo_edad,0-14,8052,69.42,68.42,70.55,0.21485345255837038
+Hospitalización,grupo_edad,15-44,18650,63.15,61.67,64.16,0.20600536193029484
+Hospitalización,grupo_edad,45-64,8432,79.48,75.11,85.41,0.3021821631878557
+Hospitalización,grupo_edad,65-79,6155,95.04,92.84,97.53,0.34930950446791204
+Hospitalización,grupo_edad,80+,3128,96.24,93.37,100.6,0.3618925831202049
+Hospitalización,sexo,F,25166,68.26,67.59,68.94,0.23952952396089938
+Hospitalización,sexo,M,19251,74.16,72.98,75.95,0.2791543296452136
+Urgencias / observación,grupo_edad,0-14,113763,0.0,0.0,0.0,0.15338027302374244
+Urgencias / observación,grupo_edad,15-44,197345,0.77,0.7,0.84,0.2625655577795232
+Urgencias / observación,grupo_edad,45-64,74349,1.69,1.57,1.82,0.3054244172752831
+Urgencias / observación,grupo_edad,65-79,40329,4.3,4.09,4.52,0.36060899104862515
+Urgencias / observación,grupo_edad,80+,17200,5.85,5.61,6.14,0.4054069767441857
+Urgencias / observación,sexo,F,251382,0.23,0.11,0.36,0.2632089807543899
+Urgencias / observación,sexo,M,191582,0.0,0.0,0.0,0.2469856249543274

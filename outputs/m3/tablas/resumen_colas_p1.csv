@@ -1,0 +1,5 @@
+servicio,lambda_por_hora,estancia_media_h,mu_por_hora,estancia_p50_h,estancia_p90_h,n_subprocesos,censo_prom_L,little_lambda_x_W,capacidad_media_c,rho_aprox
+ambulatorio,51.445,0.0,,0.0,0.0,1427228,,0.0,,
+hospitalizacion,3.586,80.506,0.0124,45.729,187.358,99483,289.5,288.7,311.9,0.926
+urgencias_ingreso,16.1,0.355,2.8189,0.054,0.097,446657,,5.7,,
+urgencias_observacion,38.364,5.828,0.1716,1.178,12.476,1064329,224.0,223.6,301.2,0.742

@@ -1,0 +1,144 @@
+[09:24:17] 10,000 snapshots explicados · E[f(X)] = 0.128 (p = 0.532) · AUC del modelo en el pliegue 0.7394
+[09:24:23] hospitalizacion · alto_riesgo: 96 snapshots · riesgo predicho 0.574 · observado 0.594
+[09:24:24] hospitalizacion · bajo_riesgo: 96 snapshots · riesgo predicho 0.040 · observado 0.042
+[09:24:24] urgencias_observacion · alto_riesgo: 405 snapshots · riesgo predicho 0.850 · observado 0.906
+[09:24:25] urgencias_observacion · bajo_riesgo: 405 snapshots · riesgo predicho 0.357 · observado 0.306
+
+Importancia global (top 15):
+                                             etiqueta              dominio  media_abs_shap  porcentaje  spearman_valor_shap
+              Servicio (hospitalización vs urgencias)             admisión           0.437      26.927               -0.681
+Momento de la evaluación (0, 2 o 6 h tras el ingreso)             admisión           0.262      16.165                0.900
+            Perfil de diagnósticos (historia clínica)     historia clínica           0.164      10.111                0.092
+                  Diagnósticos en los últimos 30 días     historia clínica           0.123       7.592                0.789
+                                                 Edad             admisión           0.101       6.196                0.814
+             Llegadas al servicio en las últimas 24 h presión del servicio           0.087       5.338                0.594
+                                         Hora del día           calendario           0.068       4.169               -0.699
+                 Visitas al hospital en el último año     historia clínica           0.063       3.911               -0.910
+             Laboratorios tomados en las últimas 24 h         laboratorios           0.056       3.479                0.756
+                Diagnósticos distintos en la historia     historia clínica           0.053       3.258                0.635
+                          Laboratorios en la historia         laboratorios           0.027       1.694               -0.221
+              Diagnósticos registrados en la historia     historia clínica           0.017       1.058               -0.274
+                                                 Sexo             admisión           0.015       0.919                0.853
+               Pacientes en el servicio (hora previa) presión del servicio           0.015       0.916                0.889
+                            Hospitalizaciones previas     historia clínica           0.013       0.789                0.562
+
+Importancia por dominio (%):
+dominio
+admisión                50.9
+historia clínica        26.8
+presión del servicio     9.2
+laboratorios             7.5
+calendario               5.6
+
+Top 8 en Hospitalización (sin la variable servicio):
+                                             etiqueta  porcentaje  spearman_valor_shap
+            Perfil de diagnósticos (historia clínica)      18.714               -0.068
+             Llegadas al servicio en las últimas 24 h      18.079               -0.016
+Momento de la evaluación (0, 2 o 6 h tras el ingreso)      10.046                0.943
+                                                 Edad       8.526                0.880
+                 Visitas al hospital en el último año       6.875               -0.898
+                  Diagnósticos en los últimos 30 días       6.504                0.839
+                Diagnósticos distintos en la historia       4.640                0.753
+                          Laboratorios en la historia       3.463                0.729
+
+Top 8 en Urgencias / observación (sin la variable servicio):
+                                             etiqueta  porcentaje  spearman_valor_shap
+Momento de la evaluación (0, 2 o 6 h tras el ingreso)      25.455                0.931
+            Perfil de diagnósticos (historia clínica)      12.490                0.138
+                  Diagnósticos en los últimos 30 días      11.462                0.831
+                                                 Edad       8.466                0.799
+                                         Hora del día       6.563               -0.748
+             Laboratorios tomados en las últimas 24 h       5.452                0.729
+                 Visitas al hospital en el último año       4.932               -0.944
+                Diagnósticos distintos en la historia       4.409                0.601
+
+Diagnósticos con mayor efecto · todos (log-odds, presente − ausente):
+ efecto                                      diagnostico  n_snapshots  diferencia
+aumenta infección localizada de piel o tejido subcutáneo          280       0.260
+aumenta                                     cólico renal          546       0.132
+aumenta                      infección de vías urinarias          605       0.112
+aumenta                         dolor abdominal superior          133       0.109
+aumenta                insuficiencia cardíaca congestiva          167       0.088
+ reduce                                amenaza de aborto          147      -0.574
+ reduce  falso trabajo de parto a término (≥ 37 semanas)          193      -0.567
+ reduce                           falso trabajo de parto          126      -0.555
+ reduce             hemorragia del tracto genitourinario          134      -0.513
+ reduce                         dolor pélvico y perineal          259      -0.407
+
+Diagnósticos con mayor efecto · Hospitalización (log-odds, presente − ausente):
+ efecto                                      diagnostico  n_snapshots  diferencia
+aumenta infección localizada de piel o tejido subcutáneo           59       0.370
+aumenta      infección aguda de vías respiratorias bajas           35       0.288
+aumenta                         dolor abdominal superior           30       0.240
+aumenta                                         neumonía           33       0.187
+aumenta                            hipertensión esencial           44       0.057
+ reduce  falso trabajo de parto a término (≥ 37 semanas)           72      -1.025
+ reduce                           falso trabajo de parto           49      -0.975
+ reduce                                parto por cesárea           33      -0.892
+ reduce                              cesárea de urgencia           58      -0.831
+ reduce                         dolor pélvico y perineal           41      -0.603
+
+Diagnósticos con mayor efecto · Urgencias / observación (log-odds, presente − ausente):
+ efecto                                      diagnostico  n_snapshots  diferencia
+aumenta infección localizada de piel o tejido subcutáneo          221       0.230
+aumenta                                     cólico renal          462       0.178
+aumenta                insuficiencia cardíaca congestiva          100       0.164
+aumenta                      infección de vías urinarias          484       0.130
+aumenta                      hemorragia gastrointestinal           93       0.092
+ reduce                                amenaza de aborto          125      -0.581
+ reduce             hemorragia del tracto genitourinario          123      -0.526
+ reduce                         dolor pélvico y perineal          218      -0.369
+ reduce  falso trabajo de parto a término (≥ 37 semanas)          121      -0.304
+ reduce falso trabajo de parto pretérmino (< 37 semanas)           93      -0.278
+
+# Síntesis clínica de la explicabilidad del modelo (Subfase 7.3)
+
+Modelo explicado: predicción de **estancia prolongada** (que la estancia supere el percentil 75 de su servicio), evaluado en pacientes que el modelo no vio durante el entrenamiento.
+
+Riesgo promedio de partida: 53%. Cada variable sube o baja el riesgo de cada paciente a partir de ese punto.
+
+## Las 5 variables más influyentes en todo el hospital
+
+1. Servicio (hospitalización vs urgencias) (admisión; 27 % de la influencia total). Estar en hospitalización se asocia con un riesgo menor de que la estancia supere lo habitual para su servicio. Este efecto refleja sobre todo cómo se define la estancia prolongada: el umbral es propio de cada servicio y, en urgencias, quien sigue allí a las 2 o 6 horas ya es un paciente de estancia larga. No significa que hospitalizar acorte la estancia.
+2. Momento de la evaluación (0, 2 o 6 h tras el ingreso) (admisión; 16 % de la influencia total). Evaluar al paciente más horas después del ingreso se asocia con un riesgo mayor de que la estancia supere lo habitual para su servicio. Que el paciente siga en el servicio horas después del ingreso es en sí información pronóstica: cuanto más tiempo lleva, más probable es que su estancia sea larga.
+3. Perfil de diagnósticos (historia clínica) (historia clínica; 10 % de la influencia total). Importa más qué diagnósticos tiene el paciente que cuántos. Entre los más frecuentes, los que más elevan el riesgo son: infección localizada de piel o tejido subcutáneo; cólico renal; infección de vías urinarias. Los que más lo reducen: amenaza de aborto; falso trabajo de parto a término (≥ 37 semanas); falso trabajo de parto.
+4. Diagnósticos en los últimos 30 días (historia clínica; 8 % de la influencia total). Tener más diagnósticos recientes se asocia con un riesgo mayor de que la estancia supere lo habitual para su servicio.
+5. Edad (admisión; 6 % de la influencia total). Mayor edad se asocia con un riesgo mayor de que la estancia supere lo habitual para su servicio.
+
+## Dentro de hospitalización
+
+1. Perfil de diagnósticos (historia clínica) (historia clínica; 19 % de la influencia total). Importa más qué diagnósticos tiene el paciente que cuántos. Entre los más frecuentes, los que más elevan el riesgo son: infección localizada de piel o tejido subcutáneo; infección aguda de vías respiratorias bajas; dolor abdominal superior. Los que más lo reducen: falso trabajo de parto a término (≥ 37 semanas); falso trabajo de parto; parto por cesárea.
+2. Llegadas al servicio en las últimas 24 h (presión del servicio; 18 % de la influencia total). Su efecto no es lineal: según el rango de valores puede aumentar o disminuir el riesgo, por lo que debe leerse junto con el resto del cuadro.
+3. Momento de la evaluación (0, 2 o 6 h tras el ingreso) (admisión; 10 % de la influencia total). Evaluar al paciente más horas después del ingreso se asocia con un riesgo mayor de que la estancia supere lo habitual para su servicio. Que el paciente siga en el servicio horas después del ingreso es en sí información pronóstica: cuanto más tiempo lleva, más probable es que su estancia sea larga.
+4. Edad (admisión; 9 % de la influencia total). Mayor edad se asocia con un riesgo mayor de que la estancia supere lo habitual para su servicio.
+5. Visitas al hospital en el último año (historia clínica; 7 % de la influencia total). Tener más visitas en el último año se asocia con un riesgo menor de que la estancia supere lo habitual para su servicio.
+
+## Dentro de urgencias / observación
+
+1. Momento de la evaluación (0, 2 o 6 h tras el ingreso) (admisión; 25 % de la influencia total). Evaluar al paciente más horas después del ingreso se asocia con un riesgo mayor de que la estancia supere lo habitual para su servicio. Que el paciente siga en el servicio horas después del ingreso es en sí información pronóstica: cuanto más tiempo lleva, más probable es que su estancia sea larga.
+2. Perfil de diagnósticos (historia clínica) (historia clínica; 12 % de la influencia total). Importa más qué diagnósticos tiene el paciente que cuántos. Entre los más frecuentes, los que más elevan el riesgo son: infección localizada de piel o tejido subcutáneo; cólico renal; insuficiencia cardíaca congestiva. Los que más lo reducen: amenaza de aborto; hemorragia del tracto genitourinario; dolor pélvico y perineal.
+3. Diagnósticos en los últimos 30 días (historia clínica; 11 % de la influencia total). Tener más diagnósticos recientes se asocia con un riesgo mayor de que la estancia supere lo habitual para su servicio.
+4. Edad (admisión; 8 % de la influencia total). Mayor edad se asocia con un riesgo mayor de que la estancia supere lo habitual para su servicio.
+5. Hora del día (calendario; 7 % de la influencia total). Una hora más tardía se asocia con un riesgo menor de que la estancia supere lo habitual para su servicio.
+
+## Diagnósticos que más mueven el riesgo dentro de cada servicio
+
+- **Hospitalización, elevan el riesgo:** infección localizada de piel o tejido subcutáneo; infección aguda de vías respiratorias bajas; dolor abdominal superior; neumonía; hipertensión esencial
+- **Hospitalización, reducen el riesgo:** falso trabajo de parto a término (≥ 37 semanas); falso trabajo de parto; parto por cesárea; cesárea de urgencia; dolor pélvico y perineal
+- **Urgencias / observación, elevan el riesgo:** infección localizada de piel o tejido subcutáneo; cólico renal; insuficiencia cardíaca congestiva; infección de vías urinarias; hemorragia gastrointestinal
+- **Urgencias / observación, reducen el riesgo:** amenaza de aborto; hemorragia del tracto genitourinario; dolor pélvico y perineal; falso trabajo de parto a término (≥ 37 semanas); falso trabajo de parto pretérmino (< 37 semanas)
+
+## Perfiles de mayor y menor riesgo dentro de cada servicio
+
+- **Hospitalización, mayor riesgo** (riesgo estimado 57%, observado 59%): perfil de diagnósticos (4 diagnósticos), diagnósticos en los últimos 30 días (259), llegadas al servicio en las últimas 24 h (88), edad (68 años).
+- **Hospitalización, menor riesgo** (riesgo estimado 4%, observado 4%): perfil de diagnósticos (2 diagnósticos), llegadas al servicio en las últimas 24 h (91), edad (24 años), diagnósticos en los últimos 30 días (132).
+- **Urgencias / observación, mayor riesgo** (riesgo estimado 85%, observado 91%): momento de la evaluación (6 h), perfil de diagnósticos (2 diagnósticos), diagnósticos en los últimos 30 días (36), edad (49 años).
+- **Urgencias / observación, menor riesgo** (riesgo estimado 36%, observado 31%): momento de la evaluación (0 h), perfil de diagnósticos (1 diagnóstico), diagnósticos en los últimos 30 días (3.0), edad (25 años).
+
+## Cómo leerlo
+
+- Son asociaciones aprendidas de los registros, no relaciones causales.
+- El registro clínico del hospital no incluye nivel de triaje, por lo que el modelo no lo usa.
+- La presión del servicio y el calendario describen el contexto operativo, no el estado clínico del paciente.
+- Los perfiles son promedios de grupos de pacientes; la explicación individual se calcula para cada paciente en el momento de usar el modelo.
+[09:24:25] Listo

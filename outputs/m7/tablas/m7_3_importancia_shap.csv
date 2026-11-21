@@ -1,0 +1,62 @@
+variable,etiqueta,dominio,media_abs_shap,porcentaje,spearman_valor_shap
+servicio,Servicio (hospitalización vs urgencias),admisión,0.43701820009003733,26.927214767843207,-0.6809863250209838
+horas_desde_ingreso,"Momento de la evaluación (0, 2 o 6 h tras el ingreso)",admisión,0.26234719981778526,16.16472584386726,0.899831187259824
+dx_codigos,Perfil de diagnósticos (historia clínica),historia clínica,0.16409395425014456,10.110776043853397,0.09172268642066927
+n_dx_30d,Diagnósticos en los últimos 30 días,historia clínica,0.12321352440509063,7.5918967065335305,0.7886770858518762
+edad,Edad,admisión,0.10055709736001438,6.19590341200015,0.8142343088047447
+srv_llegadas_suma_24h,Llegadas al servicio en las últimas 24 h,presión del servicio,0.0866322461357521,5.337912922247724,0.5943427194286718
+hora_del_dia,Hora del día,calendario,0.06766742174843851,4.169380583762938,-0.6985580591795459
+n_visitas_365d,Visitas al hospital en el último año,historia clínica,0.06347629254079527,3.911140912575928,-0.9104154881667545
+n_mediciones_24h,Laboratorios tomados en las últimas 24 h,laboratorios,0.056468768337775484,3.479366883103706,0.7562628800833475
+n_dx_distintos_historia,Diagnósticos distintos en la historia,historia clínica,0.05288293806833708,3.2584231746579078,0.6351715084997964
+n_mediciones_historia,Laboratorios en la historia,laboratorios,0.02749476478421742,1.6941112205016209,-0.22061181066172292
+n_dx_historia,Diagnósticos registrados en la historia,historia clínica,0.017175518500557832,1.0582828708696803,-0.27421380316281
+sexo,Sexo,admisión,0.014920727296053723,0.9193521649910303,0.8534926609258976
+censo_servicio_t_menos_1h,Pacientes en el servicio (hora previa),presión del servicio,0.0148706051485861,0.9162638500668278,0.8887471371078641
+n_hospitalizaciones_previas,Hospitalizaciones previas,historia clínica,0.012799831167102529,0.7886715078632723,0.5623336276090749
+srv_ocupacion_media_24h,Ocupación media del servicio (24 h),presión del servicio,0.011655026874646679,0.7181335049980452,0.12392655706660696
+mes,Mes del año,calendario,0.011358534107361578,0.6998648735768521,-0.32219911751581104
+origen_urgencias,Ingreso por urgencias,admisión,0.011036073057689298,0.6799961863299577,-0.1462675866660004
+has_measurement_4239236,Laboratorio registrado: gases arteriales,laboratorios,0.009830493582996959,0.6057134735549383,0.2704163470857046
+srv_ocupacion_media_12h,Ocupación media del servicio (12 h),presión del servicio,0.007297973252911585,0.4496702725667683,-0.32794317317586663
+srv_ocupacion_max_24h,Ocupación máxima del servicio (24 h),presión del servicio,0.005590774459504583,0.3444798970812575,0.07534392216458523
+has_measurement_4324383,Laboratorio registrado: creatinina,laboratorios,0.005452896559827156,0.3359844435381595,0.4760742594097468
+srv_ocupacion_semana_previa,Ocupación del servicio la semana anterior,presión del servicio,0.004363518194611339,0.2688615520943599,0.7588604923080787
+es_festivo,Día festivo,calendario,0.004049185923210637,0.24949372581452336,-0.3438493438138328
+has_measurement_3019550,Laboratorio registrado: sodio,laboratorios,0.0038328957670285776,0.2361668403747757,0.3639848053960857
+srv_ocupacion_media_6h,Ocupación media del servicio (6 h),presión del servicio,0.0035063159366796816,0.21604437126745077,-0.7127325328719654
+ocupacion_servicio_t_menos_1h,Ocupación del servicio (hora previa),presión del servicio,0.0031948462716099796,0.19685292669312385,-0.4941308590987283
+dia_semana,Día de la semana,calendario,0.00318193648809786,0.19605748038638976,-0.0019041376057149025
+has_measurement_42529218,Laboratorio registrado: prueba de VIH,laboratorios,0.0028263999434107226,0.17415082090485098,-0.1749696832640585
+has_measurement_4074649,Laboratorio registrado: nitrógeno ureico (BUN),laboratorios,0.0026838631626932537,0.16536830679924733,0.4807094469933655
+srv_ocupacion_tendencia_3h,Tendencia de la ocupación (3 h),presión del servicio,0.002631833457444421,0.16216245622539424,-0.04777767975494001
+llegadas_servicio_t_menos_1h,Llegadas al servicio (hora previa),presión del servicio,0.002592361185347134,0.1597303416179948,0.43808445060965623
+has_measurement_4245152,Laboratorio registrado: potasio,laboratorios,0.0025567955371157084,0.15753893666486507,0.37749172374725654
+srv_llegadas_suma_4h,Llegadas al servicio en las últimas 4 h,presión del servicio,0.002499521242691179,0.15400993666823276,-0.10244883671506419
+has_measurement_3014576,Laboratorio registrado: cloro,laboratorios,0.002167520656706093,0.13355346350526529,0.35638817507726267
+srv_ocupacion_std_24h,Variabilidad de la ocupación (24 h),presión del servicio,0.0020489521143714413,0.12624777096546375,-0.18102024375378734
+tras_festivo,Día siguiente a un festivo,calendario,0.001912985457354187,0.1178700801186867,0.36019957157610083
+sin_mediciones_24h,Sin laboratorios en las últimas 24 h,laboratorios,0.00165446776707575,0.10194131247015385,-0.8136858238904793
+has_measurement_46272908,Laboratorio registrado: proteína C reactiva,laboratorios,0.0015345927717338689,0.09455512181676687,0.40056621386837915
+srv_frac_horas_sobre_umbral_24h,Horas del servicio por encima del umbral de saturación (24 h),presión del servicio,0.0012768260714820594,0.07867262700019237,-0.5260818086873439
+horas_desde_ultima_alta_hosp,Tiempo desde la última alta hospitalaria,historia clínica,0.0012379052063069458,0.07627448775723948,-0.10771364488742732
+srv_ocupacion_media_3h,Ocupación media del servicio (3 h),presión del servicio,0.0012371580717070393,0.07622845248038368,-0.5542553239359599
+turno,Turno (mañana / tarde / noche),calendario,0.0010881563666745868,0.06704759705752703,-0.18917679024613418
+has_measurement_4016928,Laboratorio registrado: hemograma completo,laboratorios,0.0009908028757858024,0.061049086338702326,0.3375824052164649
+has_measurement_4263457,Laboratorio registrado: transaminasa AST,laboratorios,0.0008877965553208579,0.05470227214873634,0.2698888118893217
+nunca_hospitalizado,Nunca hospitalizado antes,historia clínica,0.0008321419666469875,0.05127307157601756,-0.5626195307664186
+has_measurement_3013826,Laboratorio registrado: glucosa,laboratorios,0.0007931495608961178,0.04887052430509788,0.2891858414257674
+es_hora_pico_urgencias,Hora pico de urgencias,calendario,0.0007260847403605718,0.044738273461642275,0.7562945499972439
+has_measurement_4245261,Laboratorio registrado: tiempo de protrombina,laboratorios,0.0005858515282583606,0.036097695519847685,-0.0648790898884946
+has_measurement_4146380,Laboratorio registrado: transaminasa ALT,laboratorios,0.0005460577419016353,0.03364577056241468,0.2645493739297019
+has_measurement_40547237,Laboratorio registrado: antibiograma,laboratorios,0.00053889200471906,0.03320424811770787,0.14943644212362478
+has_measurement_4213582,Laboratorio registrado: ácido láctico,laboratorios,0.0002961780515262946,0.018249239966039752,0.24189247738761155
+has_measurement_4099313,Laboratorio registrado: uroanálisis,laboratorios,0.00023078633122923384,0.014220078489206724,0.26457423451087764
+primer_dia_habil,Primer día hábil,calendario,0.0002175797517204468,0.013406344867338252,-0.1515492574945987
+has_measurement_44809202,Laboratorio registrado: tiempo de tromboplastina (TTP),laboratorios,0.00017008102284655105,0.010479673911017815,-0.19614559723616326
+es_fin_de_semana,Fin de semana,calendario,7.391822954528787e-05,0.004554528945967518,-0.3735487292632532
+has_measurement_3045524,Laboratorio registrado: bilirrubinas,laboratorios,5.480602977245097e-05,0.0033769159589956384,0.23009550359981926
+has_measurement_4184637,Laboratorio registrado: hemoglobina glicosilada,laboratorios,4.494134379952741e-05,0.0027690956948612923,0.11489641250625189
+has_measurement_4246879,Laboratorio registrado: TSH (tiroides),laboratorios,4.0954560547112716e-05,0.002523446957924265,0.12337734875765946
+sin_mediciones_historia,Sin laboratorios previos,laboratorios,1.2100929028407282e-05,0.0007456081114498632,0.7375339045428265
+sin_dx_historia,Sin diagnósticos previos,historia clínica,0.0,0.0,

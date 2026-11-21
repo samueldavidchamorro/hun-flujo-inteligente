@@ -1,0 +1,21 @@
+servicio,tipo_dia,dias,llegadas_media,indice_mediano
+ambulatorio,día después festivo,46,1689.6739130434783,0.9818536725077311
+ambulatorio,festivo,54,5.351851851851852,0.0018190079303934013
+ambulatorio,fin de semana,327,173.03363914373088,0.011120378092855158
+ambulatorio,laboral (mar–vie),601,1805.2911813643927,1.0
+ambulatorio,lunes,128,1622.28125,0.9129959068864126
+hospitalizacion,día después festivo,46,79.80434782608695,0.8166548797736917
+hospitalizacion,festivo,54,63.888888888888886,0.6500161134386078
+hospitalizacion,fin de semana,327,76.58409785932722,0.7978723404255319
+hospitalizacion,laboral (mar–vie),601,94.29950083194676,1.0
+hospitalizacion,lunes,128,83.1640625,0.8996512469566362
+urgencias_ingreso,día después festivo,46,475.3478260869565,1.1559011164274322
+urgencias_ingreso,festivo,54,328.1666666666667,0.8033577405857741
+urgencias_ingreso,fin de semana,327,315.434250764526,0.7725490196078432
+urgencias_ingreso,laboral (mar–vie),601,405.44758735440934,1.0
+urgencias_ingreso,lunes,128,470.6875,1.176644281866492
+urgencias_observacion,día después festivo,46,1057.804347826087,1.094138531413015
+urgencias_observacion,festivo,54,758.2037037037037,0.7760186222950254
+urgencias_observacion,fin de semana,327,762.7889908256881,0.7883720930232558
+urgencias_observacion,laboral (mar–vie),601,978.8069883527454,1.0
+urgencias_observacion,lunes,128,1070.5546875,1.1130258201255803

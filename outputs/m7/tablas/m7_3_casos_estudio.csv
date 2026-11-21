@@ -1,0 +1,33 @@
+servicio,caso,n_snapshots,riesgo_medio_predicho,tasa_observada,variable,shap_medio,valor_tipico
+hospitalizacion,alto_riesgo,96,0.5738290025945565,0.59375,Perfil de diagnósticos (historia clínica),0.5446458769958812,4 diagnósticos
+hospitalizacion,alto_riesgo,96,0.5738290025945565,0.59375,Diagnósticos en los últimos 30 días,0.23776240340241553,259
+hospitalizacion,alto_riesgo,96,0.5738290025945565,0.59375,Llegadas al servicio en las últimas 24 h,-0.1815411448383394,88
+hospitalizacion,alto_riesgo,96,0.5738290025945565,0.59375,Edad,0.15972199135200651,68 años
+hospitalizacion,alto_riesgo,96,0.5738290025945565,0.59375,Diagnósticos distintos en la historia,0.11773254796187288,3.5
+hospitalizacion,alto_riesgo,96,0.5738290025945565,0.59375,Laboratorios en la historia,0.06137310985478662,173
+hospitalizacion,alto_riesgo,96,0.5738290025945565,0.59375,Diagnósticos registrados en la historia,0.02758906293454007,354
+hospitalizacion,alto_riesgo,96,0.5738290025945565,0.59375,Visitas al hospital en el último año,0.02535743943064445,2.0
+hospitalizacion,bajo_riesgo,96,0.03959716902184766,0.041666666666666664,Perfil de diagnósticos (historia clínica),-0.9740517498205509,2 diagnósticos
+hospitalizacion,bajo_riesgo,96,0.03959716902184766,0.041666666666666664,Llegadas al servicio en las últimas 24 h,-0.45485839160008773,91
+hospitalizacion,bajo_riesgo,96,0.03959716902184766,0.041666666666666664,Edad,-0.07161992809824448,24 años
+hospitalizacion,bajo_riesgo,96,0.03959716902184766,0.041666666666666664,Diagnósticos en los últimos 30 días,0.05831777466907745,132
+hospitalizacion,bajo_riesgo,96,0.03959716902184766,0.041666666666666664,Diagnósticos distintos en la historia,0.03590904583115941,2.0
+hospitalizacion,bajo_riesgo,96,0.03959716902184766,0.041666666666666664,Visitas al hospital en el último año,-0.03143078002446559,3.0
+hospitalizacion,bajo_riesgo,96,0.03959716902184766,0.041666666666666664,Diagnósticos registrados en la historia,-0.030856796129883624,138
+hospitalizacion,bajo_riesgo,96,0.03959716902184766,0.041666666666666664,Hospitalizaciones previas,-0.028707132157283783,0.0
+urgencias_observacion,alto_riesgo,405,0.8503856291072565,0.9061728395061729,"Momento de la evaluación (0, 2 o 6 h tras el ingreso)",0.5134551741372202,6 h
+urgencias_observacion,alto_riesgo,405,0.8503856291072565,0.9061728395061729,Perfil de diagnósticos (historia clínica),0.2162399857804025,2 diagnósticos
+urgencias_observacion,alto_riesgo,405,0.8503856291072565,0.9061728395061729,Diagnósticos en los últimos 30 días,0.16712479513081996,36
+urgencias_observacion,alto_riesgo,405,0.8503856291072565,0.9061728395061729,Edad,0.1304148137305063,49 años
+urgencias_observacion,alto_riesgo,405,0.8503856291072565,0.9061728395061729,Llegadas al servicio en las últimas 24 h,0.06579608577964932,961
+urgencias_observacion,alto_riesgo,405,0.8503856291072565,0.9061728395061729,Laboratorios tomados en las últimas 24 h,0.05764285818389675,54
+urgencias_observacion,alto_riesgo,405,0.8503856291072565,0.9061728395061729,Diagnósticos distintos en la historia,0.03752095380702016,2.0
+urgencias_observacion,alto_riesgo,405,0.8503856291072565,0.9061728395061729,Hora del día,0.03216461102491647,13:00
+urgencias_observacion,bajo_riesgo,405,0.3571234659772866,0.30617283950617286,"Momento de la evaluación (0, 2 o 6 h tras el ingreso)",-0.29744242522434206,0 h
+urgencias_observacion,bajo_riesgo,405,0.3571234659772866,0.30617283950617286,Perfil de diagnósticos (historia clínica),-0.2838909880338504,1 diagnóstico
+urgencias_observacion,bajo_riesgo,405,0.3571234659772866,0.30617283950617286,Diagnósticos en los últimos 30 días,-0.08885305423708845,3.0
+urgencias_observacion,bajo_riesgo,405,0.3571234659772866,0.30617283950617286,Edad,-0.08310660375015966,25 años
+urgencias_observacion,bajo_riesgo,405,0.3571234659772866,0.30617283950617286,Laboratorios tomados en las últimas 24 h,-0.04726950430956891,0.0
+urgencias_observacion,bajo_riesgo,405,0.3571234659772866,0.30617283950617286,Hora del día,-0.04576894131492083,15:00
+urgencias_observacion,bajo_riesgo,405,0.3571234659772866,0.30617283950617286,Visitas al hospital en el último año,-0.033855852460210153,2.0
+urgencias_observacion,bajo_riesgo,405,0.3571234659772866,0.30617283950617286,Llegadas al servicio en las últimas 24 h,0.03126923958327747,919

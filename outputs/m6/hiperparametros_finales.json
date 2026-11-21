@@ -1,0 +1,48 @@
+{
+  "nota": "Hiperparámetros de la 6.3, salvo random_forest regularizado en la auditoría de la 6.4 (brecha ≤ 0,05)",
+  "modelos": {
+    "logreg_lasso": {
+      "modelo__C": 0.10218259491478436,
+      "modelo__class_weight": "balanced"
+    },
+    "knn": {
+      "modelo__n_neighbors": 175,
+      "modelo__weights": "distance",
+      "modelo__leaf_size": 43
+    },
+    "naive_bayes": {
+      "modelo__var_smoothing": 0.010434959898916737
+    },
+    "cart": {
+      "modelo__max_depth": 10,
+      "modelo__min_samples_leaf": 341,
+      "modelo__ccp_alpha": 1.3487019289839087e-06,
+      "modelo__criterion": "entropy",
+      "modelo__class_weight": null
+    },
+    "random_forest": {
+      "modelo__n_estimators": 428,
+      "modelo__max_depth": 14,
+      "modelo__min_samples_leaf": 100,
+      "modelo__max_features": 0.3,
+      "modelo__max_samples": 0.6761745264895063,
+      "modelo__class_weight": "balanced"
+    },
+    "lightgbm": {
+      "modelo__n_estimators": 586,
+      "modelo__learning_rate": 0.0054399152923307595,
+      "modelo__num_leaves": 166,
+      "modelo__min_child_samples": 204,
+      "modelo__subsample": 0.9941490174420149,
+      "modelo__colsample_bytree": 0.9365845126461928,
+      "modelo__reg_alpha": 0.004579789861335891,
+      "modelo__reg_lambda": 3.030865515745902e-07
+    },
+    "svm_rbf": {
+      "modelo__nystroem__gamma": 0.003148911647956862,
+      "modelo__nystroem__n_components": 893,
+      "modelo__svm__C": 2.465832945854912,
+      "modelo__svm__class_weight": null
+    }
+  }
+}

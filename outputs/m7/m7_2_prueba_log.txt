@@ -1,0 +1,49 @@
+[09:55:30] PRUEBA (única): 148,673 snapshots · 31,165 pacientes · prevalencia 0.5776
+
+Calibración (prueba, todos los servicios):
+       modelo      version  p_media  prevalencia  brier  brier_skill    ece  auc_roc  auc_pr
+     lightgbm sin_calibrar   0.5490       0.5776 0.2053       0.1584 0.0313   0.7280  0.7719
+     lightgbm     isotonic   0.5511       0.5776 0.2051       0.1593 0.0265   0.7285  0.7726
+random_forest sin_calibrar   0.5205       0.5776 0.2086       0.1449 0.0577   0.7255  0.7700
+random_forest     isotonic   0.5490       0.5776 0.2062       0.1550 0.0286   0.7253  0.7696
+      svm_rbf     isotonic   0.5563       0.5776 0.2105       0.1373 0.0214   0.7110  0.7522
+
+θ = 0,5 vs θ* (prueba):
+       modelo              servicio           regla  umbral  sensibilidad  especificidad   vpp  alertas_por_100  costo_por_100  ahorro_vs_0_5  costo_alertar_a_todos  ahorro_vs_mejor_sin_modelo
+     lightgbm                 todos         θ = 0,5   0.500         0.729          0.589 0.708           59.434         95.738          0.000                 42.239                     -53.499
+     lightgbm       hospitalizacion         θ = 0,5   0.500         0.138          0.958 0.566            6.895        124.367          0.000                 71.824                     -52.543
+     lightgbm urgencias_observacion         θ = 0,5   0.500         0.791          0.404 0.711           72.273         88.742          0.000                 35.010                     -53.732
+     lightgbm                 todos       θ* global   0.160         0.990          0.118 0.606           94.425         40.118         55.619                 42.239                       2.121
+     lightgbm       hospitalizacion       θ* global   0.160         0.896          0.354 0.353           71.608         61.024         63.343                 71.824                      10.800
+     lightgbm urgencias_observacion       θ* global   0.160         1.000          0.000 0.650          100.000         35.010         53.732                 35.010                      -0.000
+     lightgbm                 todos θ* por servicio     NaN         0.990          0.119 0.606           94.378         40.220         55.517                 42.239                       2.019
+     lightgbm       hospitalizacion θ* por servicio   0.160         0.896          0.354 0.353           71.608         61.024         63.343                 71.824                      10.800
+     lightgbm urgencias_observacion θ* por servicio   0.230         1.000          0.001 0.650           99.941         35.137         53.605                 35.010                      -0.127
+     lightgbm                 todos θ Bayes = 0.167   0.167         0.989          0.124 0.607           94.169         40.064         55.673                 42.239                       2.175
+     lightgbm       hospitalizacion θ Bayes = 0.167   0.167         0.890          0.370 0.357           70.307         60.750         63.617                 71.824                      11.074
+     lightgbm urgencias_observacion θ Bayes = 0.167   0.167         1.000          0.000 0.650          100.000         35.010         53.732                 35.010                      -0.000
+random_forest                 todos         θ = 0,5   0.500         0.723          0.588 0.706           59.180         97.352          0.000                 42.239                     -55.113
+random_forest       hospitalizacion         θ = 0,5   0.500         0.065          0.984 0.614            3.001        132.824          0.000                 71.824                     -61.000
+random_forest urgencias_observacion         θ = 0,5   0.500         0.793          0.389 0.707           72.908         88.684          0.000                 35.010                     -53.674
+random_forest                 todos       θ* global   0.170         0.989          0.123 0.607           94.200         40.180         57.172                 42.239                       2.059
+random_forest       hospitalizacion       θ* global   0.170         0.890          0.366 0.355           70.598         61.041         71.783                 71.824                      10.783
+random_forest urgencias_observacion       θ* global   0.170         1.000          0.000 0.650           99.967         35.083         53.601                 35.010                      -0.073
+random_forest                 todos θ* por servicio     NaN         0.989          0.123 0.607           94.190         40.198         57.154                 42.239                       2.041
+random_forest       hospitalizacion θ* por servicio   0.170         0.890          0.366 0.355           70.598         61.041         71.783                 71.824                      10.783
+random_forest urgencias_observacion θ* por servicio   0.200         1.000          0.001 0.650           99.955         35.105         53.579                 35.010                      -0.095
+random_forest                 todos θ Bayes = 0.167   0.167         0.990          0.120 0.606           94.314         40.157         57.195                 42.239                       2.082
+random_forest       hospitalizacion θ Bayes = 0.167   0.167         0.894          0.360 0.354           71.170         60.915         71.910                 71.824                      10.909
+random_forest urgencias_observacion θ Bayes = 0.167   0.167         1.000          0.000 0.650           99.969         35.084         53.600                 35.010                      -0.074
+      svm_rbf                 todos         θ = 0,5   0.500         0.764          0.525 0.688           64.199         88.112          0.000                 42.239                     -45.873
+      svm_rbf       hospitalizacion         θ = 0,5   0.500         0.097          0.965 0.520            5.230        129.793          0.000                 71.824                     -57.969
+      svm_rbf urgencias_observacion         θ = 0,5   0.500         0.835          0.305 0.690           78.608         77.927          0.000                 35.010                     -42.918
+      svm_rbf                 todos       θ* global   0.170         0.992          0.080 0.596           96.167         41.223         46.889                 42.239                       1.016
+      svm_rbf       hospitalizacion       θ* global   0.170         0.917          0.238 0.321           80.593         66.371         63.422                 71.824                       5.453
+      svm_rbf urgencias_observacion       θ* global   0.170         1.000          0.000 0.650           99.972         35.078         42.850                 35.010                      -0.068
+      svm_rbf                 todos θ* por servicio     NaN         0.992          0.079 0.596           96.188         41.171         46.941                 42.239                       1.068
+      svm_rbf       hospitalizacion θ* por servicio   0.170         0.917          0.238 0.321           80.593         66.371         63.422                 71.824                       5.453
+      svm_rbf urgencias_observacion θ* por servicio   0.090         1.000          0.000 0.650           99.998         35.013         42.914                 35.010                      -0.003
+      svm_rbf                 todos θ Bayes = 0.167   0.167         0.992          0.076 0.595           96.332         41.222         46.890                 42.239                       1.017
+      svm_rbf       hospitalizacion θ Bayes = 0.167   0.167         0.922          0.228 0.319           81.418         66.436         63.357                 71.824                       5.388
+      svm_rbf urgencias_observacion θ Bayes = 0.167   0.167         1.000          0.000 0.650           99.976         35.061         42.866                 35.010                      -0.051
+[09:56:41] Listo

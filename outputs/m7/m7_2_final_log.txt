@@ -1,0 +1,4 @@
+[08:27:23] lightgbm: CalibratedClassifierCV(isotonic) ajustado en 6.3 min → lightgbm_calibrado.joblib
+[09:17:23] random_forest: CalibratedClassifierCV(isotonic) ajustado en 50.0 min → random_forest_calibrado.joblib
+[09:55:25] svm_rbf: CalibratedClassifierCV(isotonic) ajustado en 38.0 min → svm_rbf_calibrado.joblib
+[09:55:25] Listo

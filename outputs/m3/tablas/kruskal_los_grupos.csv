@@ -1,0 +1,16 @@
+servicio,variable,H,ε²,magnitud,mediana LOS por grupo (h),p_BH
+Hospitalización,grupo_edad,643.6844017251259,0.018585869018714115,pequeño,0-14: 69.0; 15-44: 62.9; 45-64: 74.8; 65-79: 93.0; 80+: 95.8,< 0.001
+Hospitalización,origen,498.8425930081449,0.014403678370575605,pequeño,directo: 24.7; urgencias: 70.6,< 0.001
+Hospitalización,nunca_hospitalizado,282.4070330597241,0.008154275779162189,despreciable,no: 90.5; sí: 67.9,< 0.001
+Hospitalización,sin_mediciones_24h,114.25887540524397,0.003299133063992261,despreciable,no: 71.9; sí: 66.9,< 0.001
+Hospitalización,tipo_dia,78.61030731165955,0.0022698093526884633,despreciable,día después festivo: 66.4; festivo: 72.0; fin de semana: 73.8; laboral: 68.4,< 0.001
+Hospitalización,dia,77.90647708792098,0.0022494868214685696,despreciable,Dom: 71.4; Jue: 69.2; Lun: 66.9; Mar: 67.6; Mié: 66.7; Sáb: 77.5; Vie: 70.8,< 0.001
+Hospitalización,sexo,41.53951627382333,0.001199420098571401,despreciable,F: 67.8; M: 72.7,< 0.001
+Hospitalización,turno,23.042005144298145,0.0006653193527646507,despreciable,mañana: 60.4; noche: 68.6; tarde: 71.1,< 0.001
+Urgencias / observación,grupo_edad,1527.5527855905,0.008935199583470306,despreciable,0-14: 8.1; 15-44: 8.7; 45-64: 9.9; 65-79: 10.5; 80+: 11.3,< 0.001
+Urgencias / observación,nunca_hospitalizado,429.1238412488843,0.002510097984013034,despreciable,no: 10.6; sí: 9.0,< 0.001
+Urgencias / observación,sin_mediciones_24h,405.2840779219797,0.002370650728665819,despreciable,no: 13.4; sí: 9.1,< 0.001
+Urgencias / observación,tipo_dia,136.03225343779116,0.0007957010361419472,despreciable,día después festivo: 9.2; festivo: 8.1; fin de semana: 8.8; laboral: 9.3,< 0.001
+Urgencias / observación,dia,114.52866377697437,0.0006699188915293981,despreciable,Dom: 8.6; Jue: 9.3; Lun: 9.0; Mar: 9.4; Mié: 9.2; Sáb: 9.0; Vie: 9.3,< 0.001
+Urgencias / observación,sexo,102.5091918376229,0.0005996302621618851,despreciable,F: 9.0; M: 9.5; desconocido: 9.1,< 0.001
+Urgencias / observación,turno,33.348132784557535,0.00019506509036995733,despreciable,mañana: 9.2; noche: 9.2; tarde: 9.0,< 0.001

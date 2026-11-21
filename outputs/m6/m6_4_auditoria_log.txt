@@ -1,0 +1,28 @@
+[00:30:54] Cargando datos
+[00:31:18] Submuestra 20 %: 108,495 filas
+[01:16:50] KNN (45.5 min): train resustitución 0.9998 · train LOO 0.7624 · val 0.7055 · brecha LOO +0.0569 (resustitución +0.2943)
+[01:31:34] Ruta de regularización RF en submuestra (14.7 min):
+ max_depth  min_samples_leaf  train_auc  val_auc  brecha
+        20                24     0.8608   0.7334  0.1274
+        16                50     0.8034   0.7326  0.0708
+        14               100     0.7703   0.7304  0.0399
+        12               100     0.7639   0.7296  0.0343
+        12               200     0.7487   0.7269  0.0218
+        10               200     0.7437   0.7255  0.0181
+        10               400     0.7339   0.7222  0.0117
+         8               400     0.7300   0.7208  0.0093
+[01:31:34] Confirmación con todo el entrenamiento
+[02:16:47]   max_depth 14, min_samples_leaf 100: train 0.7621 · val 0.7364 · brecha +0.0257
+[02:16:47] Ajuste final del RF regularizado y reempaquetado
+
+Resumen auditado (model_benchmark_summary.csv):
+       modelo  train_auc  val_auc  brecha_train_val  sobreajuste_gt_005  auc_oof  auc_oof_servicio_tau                                metodo_train_auc
+     lightgbm     0.7668   0.7418            0.0251               False   0.7418                0.6937                                   resustitución
+random_forest     0.7621   0.7364            0.0257               False   0.7364                0.6865 resustitución (RF regularizado en la auditoría)
+      svm_rbf     0.7315   0.7270            0.0045               False   0.7270                0.6602                                   resustitución
+         cart     0.7320   0.7220            0.0100               False   0.7222                0.6486                                   resustitución
+ logreg_lasso     0.7158   0.7146            0.0012               False   0.7146                0.6275                                   resustitución
+          knn     0.7624   0.7055            0.0569                True   0.7054                0.6117         leave-one-out (excluye el propio punto)
+  naive_bayes     0.6651   0.6644            0.0008               False   0.6643                0.5724                                   resustitución
+[02:53:36] Listo
+EXIT 0

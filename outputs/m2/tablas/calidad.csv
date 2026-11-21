@@ -1,0 +1,19 @@
+tabla,chequeo,n_afectados,n_total,pct
+visit_occurrence,fin = inicio (LOS 0 en toda la tabla),1706001.0,1706001.0,100.0
+visit_occurrence,visit_concept_id = 0,2.0,1706001.0,0.0
+visit_occurrence,tipo LOINC 3045729 como visita (no es un concepto Visit),17858.0,1706001.0,1.05
+visit_detail,fin < inicio o fechas nulas,0.0,3281613.0,0.0
+visit_detail,vínculo a visita incoherente (empieza > tolerancia antes de su visita),954735.0,3281613.0,29.09
+visit_detail,hospitalización con vínculo incoherente,31524.0,108601.0,29.03
+visit_detail,hospitalización con duración 0,3533.0,108601.0,3.25
+visit_detail,duración > 90 días,38.0,3281613.0,0.0
+condition_occurrence,person_id distinto al de su visita (mal vinculado),7186749.0,38636063.0,18.6
+condition_occurrence,condition_concept_id = 0,14605421.0,38636063.0,37.8
+condition_occurrence,sin visit_occurrence_id,823429.0,38636063.0,2.13
+condition_occurrence,fecha posterior a 2026-08-13 (futura),82.0,38636063.0,0.0
+measurement,person_id distinto al de su visita (mal vinculado),7115665.0,16575888.0,42.93
+measurement,measurement_concept_id = 0,8876114.0,16575888.0,53.55
+measurement,sin value_as_number,6373242.0,16575888.0,38.45
+person,year_of_birth < 1900,87.0,912205.0,0.01
+person,gender_concept_id = 0,129.0,912205.0,0.01
+procedure_occurrence,procedure_date nulo (tabla no utilizable en el tiempo; no se extrae),,,

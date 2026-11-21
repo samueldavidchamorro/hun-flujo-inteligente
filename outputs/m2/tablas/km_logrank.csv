@@ -1,0 +1,6 @@
+servicio,variable,n,logrank_chi2,eps2,p_BH,magnitud ε²
+Hospitalización,origen,44417,109.86532806480787,0.008878830114274835,< 0.001,despreciable
+Hospitalización,grupo_edad,44417,823.251962380606,0.019770207112747778,< 0.001,pequeño
+Hospitalización,sexo,44417,103.34922315995776,0.0015251743807311506,< 0.001,despreciable
+Urgencias / observación,grupo_edad,442986,12563.083602095843,0.04501033297528218,< 0.001,pequeño
+Urgencias / observación,sexo,442964,2.4950304923381075,0.0012777451102678854,0.114,despreciable

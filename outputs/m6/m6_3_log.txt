@@ -1,0 +1,47 @@
+· Cargando maestro (M5) y pliegues (6.1)
+  submuestra 20%: 108,495 snapshots · 19,405 pacientes · prevalencia 0.532 · preprocesador por pliegue 18 s
+· naive_bayes: hasta 50 ensayos · timeout 30 min
+  → mejor AUC 0.6662 (± 0.0064) · servicio×τ 0.5708 · completos 26 · podados 24 · 0.4 min
+· logreg_ridge: hasta 50 ensayos · timeout 30 min
+  → mejor AUC 0.7144 (± 0.0046) · servicio×τ 0.6210 · completos 21 · podados 29 · 4.4 min
+· cart: hasta 50 ensayos · timeout 30 min
+  → mejor AUC 0.7140 (± 0.0058) · servicio×τ 0.6283 · completos 21 · podados 29 · 7.7 min
+· logreg_lasso: hasta 50 ensayos · timeout 30 min
+  → mejor AUC 0.7146 (± 0.0047) · servicio×τ 0.6230 · completos 21 · podados 29 · 6.5 min
+· svm_lineal: hasta 50 ensayos · timeout 30 min
+  → mejor AUC 0.7143 (± 0.0044) · servicio×τ 0.6214 · completos 19 · podados 31 · 9.1 min
+· random_forest: hasta 50 ensayos · timeout 30 min
+  → mejor AUC 0.7340 (± 0.0050) · servicio×τ 0.6703 · completos 14 · podados 3 · 33.8 min
+· lightgbm: hasta 50 ensayos · timeout 30 min
+  → mejor AUC 0.7368 (± 0.0045) · servicio×τ 0.6736 · completos 13 · podados 10 · 30.4 min
+· xgboost: hasta 50 ensayos · timeout 30 min
+  → mejor AUC 0.7361 (± 0.0041) · servicio×τ 0.6727 · completos 16 · podados 8 · 32.0 min
+· svm_rbf: hasta 50 ensayos · timeout 30 min
+  → mejor AUC 0.7241 (± 0.0032) · servicio×τ 0.6452 · completos 8 · podados 6 · 30.4 min
+  submuestra 5%: 27,221 snapshots · 4,851 pacientes · prevalencia 0.534 · preprocesador por pliegue 5 s
+· knn: hasta 50 ensayos · timeout 30 min
+  → mejor AUC 0.6969 (± 0.0078) · servicio×τ 0.5835 · completos 28 · podados 22 · 13.2 min
+
+Tabla comparativa (10 modelos):
+       modelo  mejor_auc_cv  auc_std_pliegues  auc_medio_servicio_tau  ensayos_completos  ensayos_podados  segundos
+     lightgbm      0.736804          0.004527                0.673625                 13               10    1825.1
+      xgboost      0.736121          0.004072                0.672687                 16                8    1921.8
+random_forest      0.733954          0.004998                0.670258                 14                3    2025.9
+      svm_rbf      0.724053          0.003154                0.645230                  8                6    1825.5
+ logreg_lasso      0.714635          0.004665                0.622956                 21               29     392.5
+ logreg_ridge      0.714396          0.004577                0.620957                 21               29     261.1
+   svm_lineal      0.714338          0.004444                0.621392                 19               31     547.2
+         cart      0.713971          0.005840                0.628310                 21               29     461.1
+          knn      0.696868          0.007833                0.583520                 28               22     789.6
+  naive_bayes      0.666199          0.006366                0.570814                 26               24      25.5
+
+Consolidado por familia (7 del prompt):
+                               familia        modelo  mejor_auc_cv  auc_std_pliegues  auc_medio_servicio_tau  ensayos_completos  ensayos_podados
+Gradient boosting (XGBoost / LightGBM)      lightgbm      0.736804          0.004527                0.673625                 13               10
+                         Random Forest random_forest      0.733954          0.004998                0.670258                 14                3
+                    SVM (lineal / RBF)       svm_rbf      0.724053          0.003154                0.645230                  8                6
+   Regresión logística (Ridge / Lasso)  logreg_lasso      0.714635          0.004665                0.622956                 21               29
+              Árbol de decisión (CART)          cart      0.713971          0.005840                0.628310                 21               29
+                                   KNN           knn      0.696868          0.007833                0.583520                 28               22
+                 Naive Bayes gaussiano   naive_bayes      0.666199          0.006366                0.570814                 26               24
+EXIT 0

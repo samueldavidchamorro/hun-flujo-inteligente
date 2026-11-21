@@ -1,0 +1,38 @@
+{
+  "congelado": "2026-11-16T08:20:41",
+  "c_fn": 5.0,
+  "c_fp": 1.0,
+  "regla": "alerta si p_calibrada ≥ θ",
+  "criterio_metodo": "menor Brier en OOF con calibración cruzada por pliegue",
+  "criterio_umbral": "menor costo esperado por 100 en OOF calibrado, θ ∈ [0,01; 0,99] paso 0,01",
+  "oof_sha256": "69eaf2ce590f88c3792bc96bcb24eb5b28b3f8de8bbf5e827cdc4ecd8cf01cc1",
+  "modelos": {
+    "lightgbm": {
+      "metodo": "isotonic",
+      "theta_global": 0.16,
+      "theta_por_servicio": {
+        "hospitalizacion": 0.16,
+        "urgencias_observacion": 0.23
+      },
+      "theta_global_cfn10_sensibilidad": 0.07
+    },
+    "random_forest": {
+      "metodo": "isotonic",
+      "theta_global": 0.17,
+      "theta_por_servicio": {
+        "hospitalizacion": 0.17,
+        "urgencias_observacion": 0.2
+      },
+      "theta_global_cfn10_sensibilidad": 0.1
+    },
+    "svm_rbf": {
+      "metodo": "isotonic",
+      "theta_global": 0.17,
+      "theta_por_servicio": {
+        "hospitalizacion": 0.17,
+        "urgencias_observacion": 0.09
+      },
+      "theta_global_cfn10_sensibilidad": 0.09
+    }
+  }
+}

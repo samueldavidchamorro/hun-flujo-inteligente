@@ -1,0 +1,21 @@
+rango,concepto,nombre,n_personas,n_registros,pct_personas,sinonimos,bandera
+1,4016928,"Hemogram, automated, with RBC, WBC, Hgb, Hct, Indices, Platelet count, and automated complete WBC differential",31681,3673975,90.32616753150482,,has_measurement_4016928
+2,4324383,Creatinine measurement,24021,55465,68.48662827165421,,has_measurement_4324383
+3,4074649,Urea nitrogen measurement,23618,109044,67.33762901294406,3024641,has_measurement_4074649
+4,46272908,Measurement of C-reactive protein using high sensitivity technique,18440,25141,52.574556651650795,,has_measurement_46272908
+5,3019550,Sodium [Moles/volume] in Serum or Plasma,13951,81367,39.77590237782973,4097430,has_measurement_3019550
+6,4245152,Potassium measurement,13918,84770,39.68181558989565,4154489,has_measurement_4245152
+7,4099313,Urinalysis,13472,34180,38.4102183953926,,has_measurement_4099313
+8,3014576,Chloride [Moles/volume] in Serum or Plasma,12778,59095,36.43154473399099,4019545,has_measurement_3014576
+9,4245261,Prothrombin time,11997,35885,34.20482408621771,3034426,has_measurement_4245261
+10,44809202,Activated partial thromboplastin time,11942,35814,34.04801277299424,4175016,has_measurement_44809202
+11,3013826,Glucose [Moles/volume] in Serum or Plasma,9870,25666,28.14050293664823,4331286,has_measurement_3013826
+12,4146380,Alanine aminotransferase measurement,8219,11592,23.43331242515824,,has_measurement_4146380
+13,4263457,Aspartate aminotransferase measurement,8181,11571,23.32497006329475,,has_measurement_4263457
+14,3045524,Bilirubin direct and total panel [Mass/volume] - Serum or Plasma,7338,23023,20.92148029879683,4230543,has_measurement_3045524
+15,4239236,"Blood gases, arterial measurement",5821,16174,16.59633916861493,36309462,has_measurement_4239236
+16,40547237,Antimicrobial susceptibility test,5097,17905,14.532132063636881,,has_measurement_40547237
+17,4213582,Lactic acid measurement,4887,21861,13.933397958601814,3014111,has_measurement_4213582
+18,4246879,Thyroid stimulating hormone measurement,4775,5241,13.61407310258311,,has_measurement_4246879
+19,4184637,Hemoglobin A1c measurement,3947,4857,11.25335005987341,,has_measurement_4184637
+20,42529218,HIV 1+2 Ab and HIV1 p24 Ag panel - Serum or Plasma by Immunoassay,3530,3801,10.064435194160916,,has_measurement_42529218

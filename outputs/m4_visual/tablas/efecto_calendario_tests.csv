@@ -1,0 +1,5 @@
+servicio,"KW ε² (tipo de día, índice sin tendencia)",magnitud,Δ día después festivo − laboral,Δ lunes − laboral,índice mediano festivo de puente,p_BH
+Ambulatorio,0.6677834985178922,grande,"-0.018 [-0.087, +0.015]","-0.087 [-0.120, -0.066]",0.002968093000247341,< 0.001
+Hospitalización,0.2063379631460559,mediano,"-0.183 [-0.241, -0.112]","-0.100 [-0.132, -0.068]",0.6331658291457286,< 0.001
+Ingreso a urgencias,0.6326534503293506,grande,"+0.156 [+0.111, +0.187]","+0.177 [+0.162, +0.195]",0.8276699029126213,< 0.001
+Urgencias / observación,0.5998895526124806,grande,"+0.094 [+0.054, +0.139]","+0.113 [+0.094, +0.133]",0.7771428571428571,< 0.001

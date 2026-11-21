@@ -1,0 +1,9 @@
+servicio,var_1,var_2,rho
+Hospitalización,n_dx_historia,n_dx_distintos_historia,0.8333423250593307
+Hospitalización,n_dx_historia,n_dx_30d,0.9273018077805457
+Hospitalización,n_dx_distintos_historia,n_dx_30d,0.744567868819494
+Hospitalización,censo_servicio_t_menos_1h,ocupacion_servicio_t_menos_1h,0.7958572019111406
+Urgencias / observación,n_dx_historia,n_dx_distintos_historia,0.9412373905616562
+Urgencias / observación,n_dx_historia,n_dx_30d,0.8027135851854494
+Urgencias / observación,n_dx_distintos_historia,n_dx_30d,0.8177406564081577
+Urgencias / observación,censo_servicio_t_menos_1h,ocupacion_servicio_t_menos_1h,0.9404184871830366

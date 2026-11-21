@@ -1,0 +1,2 @@
+config,n_neighbors,weights,leaf_size,train_auc_lopo,val_auc,brecha_lopo
+6.3,175,distance,43,0.705284600764746,0.7055242654739123,-0.00023966470916636506

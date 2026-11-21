@@ -1,0 +1,25 @@
+servicio,variable,métrica,efecto,magnitud,p_BH
+Hospitalización,turno,V Cramér,0.2770996839541053,pequeño,< 0.001
+Hospitalización,dia_semana,V Cramér,0.03610814898791933,despreciable,< 0.001
+Hospitalización,mes,V Cramér,0.1996643275403864,pequeño,< 0.001
+Hospitalización,festivo,V Cramér,0.030245219642613126,despreciable,< 0.001
+Hospitalización,fin_de_semana,V Cramér,0.010571297757121142,despreciable,0.082
+Hospitalización,hora_del_dia,V Cramér,0.30876228621910845,mediano,< 0.001
+Hospitalización,ocupacion,AUC,0.8920072165738341,grande,< 0.001
+Hospitalización,censo,AUC,0.7969208892463788,grande,< 0.001
+Hospitalización,llegadas,AUC,0.45585381115265955,despreciable,< 0.001
+Hospitalización,llegadas_4h,AUC,0.4718271784031699,despreciable,< 0.001
+Hospitalización,delta_censo_4h,AUC,0.6350177966003389,pequeño,< 0.001
+Hospitalización,capacidad,AUC,0.5044783111521944,despreciable,0.294
+Urgencias / observación,turno,V Cramér,0.40715722736971116,mediano,< 0.001
+Urgencias / observación,dia_semana,V Cramér,0.2649191535597074,pequeño,< 0.001
+Urgencias / observación,mes,V Cramér,0.17345885368081623,pequeño,< 0.001
+Urgencias / observación,festivo,V Cramér,0.10443232116016465,pequeño,< 0.001
+Urgencias / observación,fin_de_semana,V Cramér,0.24611711796184554,pequeño,< 0.001
+Urgencias / observación,hora_del_dia,V Cramér,0.4557505497902683,mediano,< 0.001
+Urgencias / observación,ocupacion,AUC,0.8354576000053546,grande,< 0.001
+Urgencias / observación,censo,AUC,0.8174759649804213,grande,< 0.001
+Urgencias / observación,llegadas,AUC,0.7741704055458296,grande,< 0.001
+Urgencias / observación,llegadas_4h,AUC,0.820805664604181,grande,< 0.001
+Urgencias / observación,delta_censo_4h,AUC,0.7799925371534254,grande,< 0.001
+Urgencias / observación,capacidad,AUC,0.5078072620479612,despreciable,0.098

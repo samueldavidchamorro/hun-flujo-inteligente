@@ -1,0 +1,15 @@
+[02:56:34] Cargando datos
+[02:57:02] Submuestra 20 %: 108,495 filas
+[03:53:48] KNN de la 6.3 (56.8 min): train LOPO 0.7053 · val 0.7055 · brecha LOPO -0.0002 (filas con < k vecinos: 0)
+
+Resumen auditado (model_benchmark_summary.csv):
+       modelo  train_auc  val_auc  brecha_train_val  sobreajuste_gt_005  auc_oof                                                   metodo_train_auc
+     lightgbm     0.7668   0.7418            0.0251               False   0.7418                                                      resustitución
+random_forest     0.7621   0.7364            0.0257               False   0.7364                    resustitución (RF regularizado en la auditoría)
+      svm_rbf     0.7315   0.7270            0.0045               False   0.7270                                                      resustitución
+         cart     0.7320   0.7220            0.0100               False   0.7222                                                      resustitución
+ logreg_lasso     0.7158   0.7146            0.0012               False   0.7146                                                      resustitución
+          knn     0.7053   0.7055           -0.0002               False   0.7054 leave-one-patient-out (excluye todas las filas del mismo paciente)
+  naive_bayes     0.6651   0.6644            0.0008               False   0.6643                                                      resustitución
+[03:53:48] Listo
+EXIT 0

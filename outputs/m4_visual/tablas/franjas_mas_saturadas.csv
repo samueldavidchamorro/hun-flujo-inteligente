@@ -1,0 +1,11 @@
+servicio,dia,hora_del_dia,ocupacion_prom,frac_horas_saturadas
+urgencias_observacion,Mar,16,0.951,0.817
+urgencias_observacion,Mar,17,0.943,0.797
+urgencias_observacion,Mar,15,0.938,0.778
+urgencias_observacion,Mar,14,0.914,0.771
+urgencias_observacion,Mié,16,0.926,0.77
+hospitalizacion,Lun,6,0.953,0.588
+hospitalizacion,Lun,4,0.951,0.582
+hospitalizacion,Lun,12,0.952,0.582
+hospitalizacion,Lun,5,0.952,0.582
+hospitalizacion,Lun,11,0.952,0.582

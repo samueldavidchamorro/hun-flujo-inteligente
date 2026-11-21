@@ -1,0 +1,3 @@
+servicio,episodios,en_riesgo_truncamiento,abiertos_en_corte,abiertos_en_corte_periodo_estable,truncamiento_periodo_estable,margen_h_hasta_corte,% LOS > margen (prob. de truncar)
+hospitalizacion,49423,924,176,2,0,2586.698888888889,0.011256951167345836
+urgencias_observacion,493320,8548,290,4,0,2586.698888888889,0.0020316669149815117

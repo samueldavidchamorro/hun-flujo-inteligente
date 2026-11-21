@@ -1,0 +1,13 @@
+servicio,horas_desde_ingreso,particion,n,positivos,tasa
+hospitalizacion,0,entrenamiento,34634,8658,0.24998556331928162
+hospitalizacion,0,prueba,9782,2742,0.28031077489266
+hospitalizacion,2,entrenamiento,34496,8658,0.2509856215213358
+hospitalizacion,2,prueba,9751,2742,0.28120192800738386
+hospitalizacion,6,entrenamiento,34274,8658,0.2526113088638618
+hospitalizacion,6,prueba,9662,2742,0.28379217553301594
+urgencias_observacion,0,entrenamiento,170960,87574,0.5122484791764156
+urgencias_observacion,0,prueba,45867,25883,0.5643054919659014
+urgencias_observacion,2,entrenamiento,150972,87574,0.5800678271467556
+urgencias_observacion,2,prueba,40567,25883,0.6380309118248823
+urgencias_observacion,6,entrenamiento,115924,87574,0.7554432214209309
+urgencias_observacion,6,prueba,33044,25883,0.783288948069241

@@ -1,0 +1,53 @@
+/* =========================================================================
+   Sistema de diseño · HUN Flujo Inteligente
+   Tokens de color, tipografía, espaciado y movimiento.
+   La paleta debe coincidir con plataforma/config.py (COLOR).
+   ========================================================================= */
+:root {
+  color-scheme: dark;
+
+  /* Color · jerarquía v1.2 (contraste WCAG AA verificado sobre fondo, tarjeta y superficie 2) */
+  --fondo: #070B14;
+  --fondo-2: #0B1321;
+  --tarjeta: #101A2B;
+  --tarjeta-2: #16243A;
+  --azul: #3984FF;          /* interactivo: navegación, selección, controles */
+  --azul-suave: rgba(57, 132, 255, 0.14);
+  --cian: #31D6E8;          /* informativo: datos y elementos analíticos */
+  --cian-suave: rgba(49, 214, 232, 0.10);
+  --verde: #25D69A;         /* favorable */
+  --naranja: #FFAA45;       /* preventivo / advertencia */
+  --rojo: #FF5D70;          /* crítico */
+  --gris: #4A5A70;          /* neutral, deshabilitado, secundario */
+  --gris-claro: #93A3B8;
+  --texto: #F3F7FC;
+  --texto-2: #A7B5C9;
+  --texto-3: #8292A8;
+  --linea: #1D2B40;         /* divisores internos */
+  --linea-fuerte: #26364D;  /* bordes de tarjetas y controles */
+  --vidrio: rgba(16, 26, 43, 0.72);
+  --sombra: 0 1px 0 rgba(255,255,255,0.03) inset, 0 18px 40px -28px rgba(0,0,0,0.8);
+
+  /* Tipografía */
+  --fuente: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --fuente-titular: "Inter Tight", "Inter", system-ui, sans-serif;
+  --fuente-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+  --t-hero: clamp(2.9rem, 8.4vw, 8.2rem);
+  --t-h2: clamp(2.1rem, 4.6vw, 4.1rem);
+  --t-h3: clamp(1.25rem, 1.9vw, 1.6rem);
+  --t-cuerpo: 1rem;
+  --t-chico: 0.8125rem;
+  --t-micro: 0.6875rem;
+
+  /* Espaciado y forma */
+  --margen: clamp(16px, 4.5vw, 72px);
+  --ancho: 1320px;
+  --radio: 18px;
+  --radio-chico: 10px;
+  --seccion-pad: clamp(96px, 14vh, 168px);
+
+  /* Movimiento */
+  --curva: cubic-bezier(0.22, 1, 0.36, 1);
+  --rapido: 180ms;
+  --medio: 420ms;
+}

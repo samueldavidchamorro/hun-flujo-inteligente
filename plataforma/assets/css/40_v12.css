@@ -1,0 +1,186 @@
+/* =========================================================================
+   v1.2 · Design system: superficies, jerarquía de paneles, interpretación,
+   semántica de datos (observado / estimado / simulado), recorrido del
+   paciente, inteligencia operativa y ajustes del gemelo y resultados.
+   ========================================================================= */
+
+/* ---------- Superficies ---------- */
+.panel {
+  background: var(--tarjeta);
+  border: 1px solid var(--linea-fuerte);
+  box-shadow: var(--sombra);
+  transition: border-color var(--medio) var(--curva), transform var(--medio) var(--curva);
+}
+.panel:hover { border-color: #31445F; }
+.panel .panel { background: var(--tarjeta-2); box-shadow: none; }
+.lectura { border-top-color: var(--linea); color: var(--texto-2); }
+.nota-datos { color: var(--texto-2); }
+.estadistico { background: var(--fondo-2); }
+.estadistico span, .tabla th { color: var(--texto-3); }
+.tabla td { color: var(--texto-2); }
+
+/* ---------- Jerarquía del panel: antetítulo (pregunta) → hallazgo → fuente ---------- */
+.panel-ojo {
+  margin: 0 0 6px; font: 500 var(--t-micro) var(--fuente-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--cian);
+}
+.panel-hallazgo {
+  margin: 0 0 8px; font: 600 1.18rem/1.3 var(--fuente-titular); letter-spacing: -0.015em; color: var(--texto); max-width: 52ch; text-wrap: balance;
+}
+.panel-pregunta { color: var(--texto); }
+.panel-fuente { color: var(--texto-3); display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+
+/* ---------- Tipo de dato ---------- */
+.tipo-dato {
+  display: inline-flex; align-items: center; gap: 6px; padding: 2px 8px; border-radius: 999px;
+  font: 600 10px var(--fuente-mono); letter-spacing: .08em; text-transform: uppercase; white-space: nowrap;
+}
+.tipo-dato::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.tipo-observado { color: var(--cian); background: rgba(49,214,232,.10); }
+.tipo-estimado { color: #7EB0FF; background: rgba(57,132,255,.14); }
+.tipo-simulado { color: var(--gris-claro); background: rgba(147,163,184,.12); }
+
+/* ---------- Bloque de interpretación ---------- */
+.interpretacion {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; margin-top: 16px;
+  background: var(--linea); border: 1px solid var(--linea); border-radius: 12px; overflow: hidden;
+}
+.interp-parte { background: var(--fondo-2); padding: 14px 16px; }
+.interp-rotulo { display: block; font: 600 10px var(--fuente-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--texto-3); margin-bottom: 6px; }
+.interp-parte:nth-child(2) .interp-rotulo { color: var(--cian); }
+.interp-parte:nth-child(3) .interp-rotulo { color: var(--verde); }
+.interp-parte p { margin: 0; font-size: 0.9rem; line-height: 1.55; color: var(--texto-2); }
+.interp-parte:nth-child(2) p { color: var(--texto); }
+
+/* ---------- Narrativa: etapas Comprender / Predecir / Optimizar ---------- */
+.etapa-narrativa {
+  display: inline-flex; align-items: center; gap: 8px; margin-left: 12px; padding: 3px 10px; border-radius: 999px;
+  border: 1px solid var(--linea-fuerte); color: var(--texto-2); font: 600 10px var(--fuente-mono); letter-spacing: .16em;
+}
+.nav-enlaces a.activo { background: var(--tarjeta-2); box-shadow: inset 0 0 0 1px var(--linea-fuerte); }
+
+/* ---------- Recorrido del paciente ---------- */
+.recorrido { position: relative; padding: 8px 0 4px; }
+.recorrido-pista { display: grid; grid-template-columns: 0.95fr repeat(3, minmax(0, 1.25fr)) 0.8fr; gap: 0; align-items: stretch; }
+.rc-nodo {
+  position: relative; margin: 0 26px; padding: 16px 16px 14px; border-radius: 14px; background: var(--tarjeta-2);
+  border: 1px solid var(--linea-fuerte); min-width: 0; display: flex; flex-direction: column; gap: 8px;
+}
+.rc-nodo:first-child { margin-left: 0; } .rc-nodo:last-child { margin-right: 0; }
+.rc-nodo.extremo { background: var(--fondo-2); justify-content: center; text-align: center; }
+.rc-nodo h5 { margin: 0; font: 600 1rem/1.2 var(--fuente-titular); letter-spacing: -0.01em; }
+.rc-nodo .rc-vol { font: 600 1.35rem var(--fuente-mono); color: var(--texto); font-variant-numeric: tabular-nums; }
+.rc-nodo .rc-vol small { font: 500 11px var(--fuente); color: var(--texto-3); margin-left: 4px; }
+.rc-metricas { display: grid; gap: 4px; margin: 0; }
+.rc-metricas div { display: flex; justify-content: space-between; gap: 8px; font-size: 12px; color: var(--texto-2); }
+.rc-metricas dt { color: var(--texto-3); } .rc-metricas dd { margin: 0; font-family: var(--fuente-mono); color: var(--texto); }
+.rc-estado { align-self: flex-start; font: 600 10px var(--fuente-mono); letter-spacing: .1em; text-transform: uppercase; padding: 3px 8px; border-radius: 999px; }
+.rc-estado.fluido { color: var(--verde); background: rgba(37,214,154,.10); }
+.rc-estado.acumulacion { color: var(--naranja); background: rgba(255,170,69,.12); }
+.rc-estado.cuello { color: var(--rojo); background: rgba(255,93,112,.12); }
+.rc-estado.neutro { color: var(--gris-claro); background: rgba(147,163,184,.12); }
+.rc-nodo.cuello { border-color: rgba(255,93,112,.55); box-shadow: 0 0 0 1px rgba(255,93,112,.18), 0 18px 50px -30px rgba(255,93,112,.6); }
+.rc-nodo.acumulacion { border-color: rgba(255,170,69,.5); }
+/* Conectores con la probabilidad real de transición */
+.rc-nodo[data-salida]::after {
+  content: attr(data-salida); position: absolute; left: 100%; top: 50%; width: 52px; transform: translateY(-50%);
+  text-align: center; font: 600 11px var(--fuente-mono); color: var(--cian); padding-bottom: 14px;
+  background: linear-gradient(var(--cian), var(--cian)) center calc(50% + 6px) / 100% 1.5px no-repeat;
+}
+.rc-nodo[data-salida]::before {
+  content: ""; position: absolute; left: calc(100% + 46px); top: calc(50% + 2px); border: 4.5px solid transparent; border-left: 7px solid var(--cian);
+}
+.rc-desvios { display: grid; grid-template-columns: 0.95fr repeat(3, minmax(0, 1.25fr)) 0.8fr; margin-top: 10px; }
+.rc-desvio { margin: 0 26px; font-size: 11.5px; color: var(--texto-3); text-align: center; }
+.rc-desvio b { font-family: var(--fuente-mono); color: var(--texto-2); font-weight: 600; }
+.rc-transicion {
+  margin-top: 14px; display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-radius: 12px;
+  border: 1px dashed rgba(255,93,112,.45); background: rgba(255,93,112,.05); font-size: 0.9rem; color: var(--texto-2);
+}
+.rc-transicion b { color: var(--texto); }
+.rc-criterios { margin: 14px 0 0; font-size: 12px; color: var(--texto-3); }
+
+/* ---------- Inteligencia operativa ---------- */
+.operativa-niveles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.nivel { display: flex; flex-direction: column; gap: 14px; }
+.nivel-cabecera { display: flex; align-items: baseline; gap: 10px; }
+.nivel-cabecera .nivel-num { font: 600 2.2rem/1 var(--fuente-titular); color: var(--linea-fuerte); -webkit-text-stroke: 1px #3a4e6c; color: transparent; }
+.nivel-cabecera h3 { margin: 0; font: 600 1.25rem/1.2 var(--fuente-titular); letter-spacing: -0.02em; }
+.nivel-cabecera p { margin: 2px 0 0; font-size: var(--t-chico); color: var(--texto-3); }
+.mini-kpis { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--linea); border: 1px solid var(--linea-fuerte); border-radius: 14px; overflow: hidden; }
+.mini-kpi { background: var(--tarjeta); padding: 14px; }
+.mini-kpi b { display: block; font: 650 1.6rem/1.05 var(--fuente-titular); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.mini-kpi span { display: block; margin-top: 4px; font-size: 12px; color: var(--texto-2); line-height: 1.35; }
+.mini-kpi.cian b { color: var(--cian); } .mini-kpi.azul b { color: #7EB0FF; } .mini-kpi.verde b { color: var(--verde); } .mini-kpi.naranja b { color: var(--naranja); }
+.nivel .panel { padding: 16px; }
+.tabla-politicas td:first-child { white-space: nowrap; }
+.tabla-politicas tr.optima td { color: var(--texto); background: rgba(37,214,154,.07); }
+.tabla-politicas tr.actual td { color: var(--texto); }
+.enlace-detalle { display: inline-flex; gap: 6px; align-items: center; font: 600 12px var(--fuente-mono); letter-spacing: .06em; color: var(--azul); }
+.enlace-detalle:hover { color: #7EB0FF; }
+
+/* ---------- Gemelo: grupos de control, transparencia, guía ---------- */
+.grupo-control + .grupo-control { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--linea); }
+.gemelo-transparencia {
+  grid-column: 1 / -1; display: flex; gap: 12px; align-items: flex-start; padding: 14px 16px; border-radius: 12px;
+  background: rgba(147,163,184,.06); border: 1px solid var(--linea-fuerte); font-size: 0.875rem; color: var(--texto-2);
+}
+.gemelo-transparencia b { color: var(--texto); }
+.guia-simulacion { margin-top: 10px; }
+.guia-simulacion summary { cursor: pointer; font: 600 12px var(--fuente-mono); letter-spacing: .06em; color: var(--azul); list-style: none; }
+.guia-simulacion summary::-webkit-details-marker { display: none; }
+.guia-simulacion summary::before { content: "+ "; }
+.guia-simulacion[open] summary::before { content: "− "; }
+.guia-simulacion ul { margin: 10px 0 0; padding-left: 16px; font-size: 12.5px; color: var(--texto-2); display: grid; gap: 6px; }
+.que-cambia { margin-top: 10px; font-size: 12.5px; color: var(--texto-2); line-height: 1.5; }
+.que-cambia b { color: var(--texto); }
+.inspector-cabecera { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 10px; }
+.inspector-cabecera b { font: 600 1rem var(--fuente-mono); }
+.estado-chip { font: 600 10px var(--fuente-mono); letter-spacing: .08em; text-transform: uppercase; padding: 3px 8px; border-radius: 999px; }
+.zona-etiqueta { background: rgba(7,11,20,.86); border-color: var(--linea-fuerte); color: var(--texto-2); }
+.gemelo-leyenda { background: rgba(7,11,20,.86); border-color: var(--linea-fuerte); color: var(--texto-2); font-size: 11.5px; }
+
+/* ---------- Resultados: KPI con nombre, contexto, comparación e interpretación ---------- */
+.kpi-nombre { font: 600 var(--t-micro) var(--fuente-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--texto-3); margin-bottom: 12px; }
+.kpi-interpretacion { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--linea); font-size: 12.5px; color: var(--texto-2); line-height: 1.5; }
+.kpi-antes { color: var(--texto-3); }
+.impacto { margin-top: 20px; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 28px; align-items: start; padding: clamp(20px, 2.6vw, 32px); border-radius: var(--radio); border: 1px solid var(--linea-fuerte); background: linear-gradient(135deg, rgba(37,214,154,.07), var(--tarjeta) 55%); }
+.impacto h3 { margin: 8px 0 10px; font: 600 1.5rem/1.15 var(--fuente-titular); letter-spacing: -0.02em; }
+.impacto > div > p { margin: 0; color: var(--texto-2); }
+.impacto-lista { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 0; padding: 0; list-style: none; }
+.impacto-lista li { padding: 14px; border-radius: 12px; background: var(--fondo-2); border: 1px solid var(--linea); font-size: 0.875rem; color: var(--texto-2); }
+.impacto-lista li b { display: block; color: var(--texto); margin-bottom: 4px; font-size: 0.95rem; }
+.lema span:nth-child(2) { color: var(--texto-2); }
+
+@media (max-width: 1180px) {
+  .operativa-niveles { grid-template-columns: minmax(0, 1fr); }
+  .recorrido-pista, .rc-desvios { grid-template-columns: minmax(0, 1fr); row-gap: 40px; }
+  .rc-nodo { margin: 0; }
+  .rc-nodo[data-salida]::after { left: 50%; top: 100%; transform: translateX(-50%); width: 80px; background: none; padding: 8px 0 0; }
+  .rc-nodo[data-salida]::before { display: none; }
+  .rc-desvios { display: none; }
+  .interpretacion, .impacto, .impacto-lista { grid-template-columns: minmax(0, 1fr); }
+}
+.tabla-politicas { font-size: 12px; }
+.tabla-politicas th, .tabla-politicas td { padding: 8px 6px; }
+.tabla-politicas td:first-child { white-space: normal; }
+/* Rótulo del escenario bajo el reloj: arriba no cabe junto a los chips en lienzos de ~830 px */
+.gemelo-escenario { left: 16px; top: 60px; transform: none; }
+
+/* ---------- Intro: primero la animación 3D, después el texto ---------- */
+.hero-contenido, .aviso-escena, .hero-indicador, .nav { transition: opacity .6s var(--curva); }
+.hero::after, .hero-escena::after { transition: opacity 1.6s var(--curva); }
+html.intro-pendiente .hero-contenido { visibility: hidden; }  /* visibility: GSAP anima su opacidad con el scroll */
+html.intro-pendiente .aviso-escena,
+html.intro-pendiente .hero-indicador,
+html.intro-pendiente .nav,
+html.intro-pendiente .progreso { opacity: 0; pointer-events: none; }
+/* Sin velos oscuros durante la intro: el edificio se ve completo */
+html.intro-pendiente .hero::after,
+html.intro-pendiente .hero-escena::after { opacity: 0; }
+
+/* Recorrido simple: una cifra por etapa */
+.rc-nodo { justify-content: center; text-align: center; align-items: center; min-height: 150px; }
+.rc-nodo .rc-estado { align-self: center; }
+.rc-nodo .rc-vol { font-size: 1.7rem; }
+.rc-pie { font-size: 12px; color: var(--texto-3); }
+.nota-gemelo { grid-column: 1 / -1; margin: 4px 0 0; font-size: 12px; color: var(--texto-3); }

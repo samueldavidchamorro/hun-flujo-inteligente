@@ -1,0 +1,501 @@
+componente,rango,codigo,nombre,carga
+svd_dx_00,1,dx_201690,Renal colic,0.8356897
+svd_dx_00,2,dx_81902,Urinary tract infectious disease,0.5194868
+svd_dx_00,3,dx_200219,Abdominal pain,0.09365737
+svd_dx_00,4,dx_378253,Headache,0.068660855
+svd_dx_00,5,dx_201618,Disorder of intestine,0.06383183
+svd_dx_00,6,dx_194133,Low back pain,0.04657078
+svd_dx_00,7,dx_77670,Chest pain,0.04071267
+svd_dx_00,8,dx_201620,Kidney stone,0.03570992
+svd_dx_00,9,dx_437663,Fever,0.03232203
+svd_dx_00,10,dx_4182562,Lower abdominal pain,0.031362392
+svd_dx_01,1,dx_81902,Urinary tract infectious disease,0.82661504
+svd_dx_01,2,dx_201690,Renal colic,-0.5412884
+svd_dx_01,3,dx_201618,Disorder of intestine,0.07431301
+svd_dx_01,4,dx_378253,Headache,0.07174667
+svd_dx_01,5,dx_437663,Fever,0.058482904
+svd_dx_01,6,dx_200219,Abdominal pain,0.044454064
+svd_dx_01,7,dx_260427,Common cold,0.033945274
+svd_dx_01,8,dx_440022,Dengue,0.03171609
+svd_dx_01,9,dx_77670,Chest pain,0.027013645
+svd_dx_01,10,dx_443600,Localized infection of skin AND/OR subcutaneous tissue,0.02624676
+svd_dx_02,1,dx_378253,Headache,0.7036345
+svd_dx_02,2,dx_201618,Disorder of intestine,0.51310915
+svd_dx_02,3,dx_200219,Abdominal pain,0.28880948
+svd_dx_02,4,dx_77670,Chest pain,0.23838747
+svd_dx_02,5,dx_81902,Urinary tract infectious disease,-0.18945004
+svd_dx_02,6,dx_260427,Common cold,0.097513184
+svd_dx_02,7,dx_4168216,Pelvic and perineal pain,0.09310644
+svd_dx_02,8,dx_437663,Fever,0.070417345
+svd_dx_02,9,dx_443600,Localized infection of skin AND/OR subcutaneous tissue,0.06368664
+svd_dx_02,10,dx_320128,Essential hypertension,0.06166031
+svd_dx_03,1,dx_201618,Disorder of intestine,0.7249198
+svd_dx_03,2,dx_378253,Headache,-0.60975
+svd_dx_03,3,dx_200219,Abdominal pain,0.24864338
+svd_dx_03,4,dx_77670,Chest pain,-0.14850861
+svd_dx_03,5,dx_260427,Common cold,0.09799874
+svd_dx_03,6,dx_437663,Fever,0.054006856
+svd_dx_03,7,dx_81902,Urinary tract infectious disease,-0.035477463
+svd_dx_03,8,dx_320128,Essential hypertension,-0.034103002
+svd_dx_03,9,dx_440022,Dengue,0.017166495
+svd_dx_03,10,dx_375415,Injury of head,0.017044755
+svd_dx_04,1,dx_77670,Chest pain,0.6496663
+svd_dx_04,2,dx_200219,Abdominal pain,0.6207928
+svd_dx_04,3,dx_201618,Disorder of intestine,-0.30869028
+svd_dx_04,4,dx_378253,Headache,-0.27676564
+svd_dx_04,5,dx_443600,Localized infection of skin AND/OR subcutaneous tissue,0.052660774
+svd_dx_04,6,dx_260427,Common cold,-0.04675964
+svd_dx_04,7,dx_319835,Congestive heart failure,0.04311199
+svd_dx_04,8,dx_201690,Renal colic,-0.041372057
+svd_dx_04,9,dx_4310400,Acute appendicitis,0.03921916
+svd_dx_04,10,dx_312327,Acute myocardial infarction,0.034430396
+svd_dx_05,1,dx_77670,Chest pain,0.6880551
+svd_dx_05,2,dx_200219,Abdominal pain,-0.6520009
+svd_dx_05,3,dx_201618,Disorder of intestine,0.24965134
+svd_dx_05,4,dx_378253,Headache,-0.13393009
+svd_dx_05,5,dx_4168216,Pelvic and perineal pain,-0.051811773
+svd_dx_05,6,dx_4310400,Acute appendicitis,-0.043937318
+svd_dx_05,7,dx_440457,Threatened miscarriage,-0.041864835
+svd_dx_05,8,dx_4182562,Lower abdominal pain,-0.04172736
+svd_dx_05,9,dx_312327,Acute myocardial infarction,0.037850514
+svd_dx_05,10,dx_260427,Common cold,0.036708117
+svd_dx_06,1,dx_443600,Localized infection of skin AND/OR subcutaneous tissue,0.9821001
+svd_dx_06,2,dx_435613,Cellulitis,0.10530947
+svd_dx_06,3,dx_77670,Chest pain,-0.06639328
+svd_dx_06,4,dx_200219,Abdominal pain,-0.05839268
+svd_dx_06,5,dx_4181064,Inflammatory disorder of extremity,0.056028422
+svd_dx_06,6,dx_201618,Disorder of intestine,-0.047524385
+svd_dx_06,7,dx_437663,Fever,0.03242405
+svd_dx_06,8,dx_378253,Headache,-0.03086562
+svd_dx_06,9,dx_197304,Ulcer of lower extremity,0.029977338
+svd_dx_06,10,dx_4214376,Hyperglycemia,0.028637849
+svd_dx_07,1,dx_4062558,False labor at or after 37 completed weeks of gestation,0.50479084
+svd_dx_07,2,dx_4168216,Pelvic and perineal pain,0.4367914
+svd_dx_07,3,dx_440457,Threatened miscarriage,0.3314231
+svd_dx_07,4,dx_260427,Common cold,0.29086572
+svd_dx_07,5,dx_437663,Fever,0.27000532
+svd_dx_07,6,dx_4066112,Delivery by emergency cesarean section,0.23766617
+svd_dx_07,7,dx_4062557,False labor,0.21975322
+svd_dx_07,8,dx_4169954,Genitourinary tract hemorrhage,0.21356781
+svd_dx_07,9,dx_440022,Dengue,0.16409555
+svd_dx_07,10,dx_45757113,False labor before 37 completed weeks of gestation,0.14394596
+svd_dx_08,1,dx_437663,Fever,0.5403167
+svd_dx_08,2,dx_260427,Common cold,0.52300924
+svd_dx_08,3,dx_440022,Dengue,0.4119329
+svd_dx_08,4,dx_4062558,False labor at or after 37 completed weeks of gestation,-0.2920036
+svd_dx_08,5,dx_4168216,Pelvic and perineal pain,-0.2089762
+svd_dx_08,6,dx_440457,Threatened miscarriage,-0.1578906
+svd_dx_08,7,dx_375415,Injury of head,0.15764037
+svd_dx_08,8,dx_201618,Disorder of intestine,-0.1426539
+svd_dx_08,9,dx_4066112,Delivery by emergency cesarean section,-0.13335204
+svd_dx_08,10,dx_4062557,False labor,-0.11571719
+svd_dx_09,1,dx_375415,Injury of head,0.6846054
+svd_dx_09,2,dx_260427,Common cold,0.47607663
+svd_dx_09,3,dx_440022,Dengue,-0.39281383
+svd_dx_09,4,dx_437663,Fever,-0.37205824
+svd_dx_09,5,dx_4169954,Genitourinary tract hemorrhage,-0.058588486
+svd_dx_09,6,dx_201618,Disorder of intestine,-0.04809139
+svd_dx_09,7,dx_440457,Threatened miscarriage,-0.03874665
+svd_dx_09,8,dx_4062558,False labor at or after 37 completed weeks of gestation,0.0375791
+svd_dx_09,9,dx_81902,Urinary tract infectious disease,0.019877117
+svd_dx_09,10,dx_260125,Acute bronchiolitis,0.016874893
+svd_dx_10,1,dx_4169954,Genitourinary tract hemorrhage,0.6002137
+svd_dx_10,2,dx_4062558,False labor at or after 37 completed weeks of gestation,-0.47492343
+svd_dx_10,3,dx_440457,Threatened miscarriage,0.4217131
+svd_dx_10,4,dx_375415,Injury of head,0.2658918
+svd_dx_10,5,dx_4168216,Pelvic and perineal pain,0.20190707
+svd_dx_10,6,dx_4066112,Delivery by emergency cesarean section,-0.19402932
+svd_dx_10,7,dx_260427,Common cold,-0.18092911
+svd_dx_10,8,dx_4062557,False labor,-0.16837494
+svd_dx_10,9,dx_4182562,Lower abdominal pain,0.06503041
+svd_dx_10,10,dx_193277,Deliveries by cesarean,-0.06160436
+svd_dx_11,1,dx_375415,Injury of head,0.6523182
+svd_dx_11,2,dx_260427,Common cold,-0.58080035
+svd_dx_11,3,dx_440022,Dengue,0.2758694
+svd_dx_11,4,dx_437663,Fever,0.23107462
+svd_dx_11,5,dx_4062558,False labor at or after 37 completed weeks of gestation,0.20329818
+svd_dx_11,6,dx_4169954,Genitourinary tract hemorrhage,-0.16372094
+svd_dx_11,7,dx_440457,Threatened miscarriage,-0.12477819
+svd_dx_11,8,dx_4066112,Delivery by emergency cesarean section,0.08448281
+svd_dx_11,9,dx_4062557,False labor,0.06798009
+svd_dx_11,10,dx_4168216,Pelvic and perineal pain,-0.06202722
+svd_dx_12,1,dx_4169954,Genitourinary tract hemorrhage,0.7287134
+svd_dx_12,2,dx_4168216,Pelvic and perineal pain,-0.4604042
+svd_dx_12,3,dx_440457,Threatened miscarriage,-0.39364916
+svd_dx_12,4,dx_4062558,False labor at or after 37 completed weeks of gestation,0.27923322
+svd_dx_12,5,dx_4066112,Delivery by emergency cesarean section,0.09733158
+svd_dx_12,6,dx_4062557,False labor,0.07291368
+svd_dx_12,7,dx_4146482,Urinary tract infection in pregnancy,-0.03300381
+svd_dx_12,8,dx_260427,Common cold,0.032331835
+svd_dx_12,9,dx_197236,Uterine leiomyoma,0.032142654
+svd_dx_12,10,dx_4182562,Lower abdominal pain,-0.029355535
+svd_dx_13,1,dx_194133,Low back pain,0.9702123
+svd_dx_13,2,dx_4001450,Lumbago with sciatica,0.1344669
+svd_dx_13,3,dx_437663,Fever,-0.11774169
+svd_dx_13,4,dx_440457,Threatened miscarriage,-0.07241405
+svd_dx_13,5,dx_440022,Dengue,0.054753814
+svd_dx_13,6,dx_375415,Injury of head,-0.052087728
+svd_dx_13,7,dx_192671,Gastrointestinal hemorrhage,0.049899243
+svd_dx_13,8,dx_4307774,Acute lower respiratory tract infection,0.039268665
+svd_dx_13,9,dx_378253,Headache,-0.03673911
+svd_dx_13,10,dx_201690,Renal colic,-0.035586864
+svd_dx_14,1,dx_440022,Dengue,0.746348
+svd_dx_14,2,dx_437663,Fever,-0.63348526
+svd_dx_14,3,dx_260427,Common cold,0.111501835
+svd_dx_14,4,dx_194133,Low back pain,-0.104073904
+svd_dx_14,5,dx_440457,Threatened miscarriage,0.08638417
+svd_dx_14,6,dx_319835,Congestive heart failure,-0.041671053
+svd_dx_14,7,dx_4168216,Pelvic and perineal pain,-0.035830647
+svd_dx_14,8,dx_4307774,Acute lower respiratory tract infection,-0.03334823
+svd_dx_14,9,dx_255848,Pneumonia,-0.026897654
+svd_dx_14,10,dx_4062558,False labor at or after 37 completed weeks of gestation,0.026763927
+svd_dx_15,1,dx_440457,Threatened miscarriage,0.69770575
+svd_dx_15,2,dx_4168216,Pelvic and perineal pain,-0.6768785
+svd_dx_15,3,dx_4062558,False labor at or after 37 completed weeks of gestation,0.14647688
+svd_dx_15,4,dx_4169954,Genitourinary tract hemorrhage,-0.11570819
+svd_dx_15,5,dx_194133,Low back pain,0.072568126
+svd_dx_15,6,dx_440022,Dengue,-0.06806977
+svd_dx_15,7,dx_437663,Fever,0.054426804
+svd_dx_15,8,dx_4182562,Lower abdominal pain,-0.042901047
+svd_dx_15,9,dx_4066112,Delivery by emergency cesarean section,0.04237506
+svd_dx_15,10,dx_4062557,False labor,0.023399176
+svd_dx_16,1,dx_192671,Gastrointestinal hemorrhage,0.89185554
+svd_dx_16,2,dx_320128,Essential hypertension,0.22557753
+svd_dx_16,3,dx_319835,Congestive heart failure,0.22082604
+svd_dx_16,4,dx_4307774,Acute lower respiratory tract infection,0.14614071
+svd_dx_16,5,dx_316139,Heart failure,0.13963433
+svd_dx_16,6,dx_4182562,Lower abdominal pain,0.100591145
+svd_dx_16,7,dx_381316,Cerebrovascular accident,0.098045595
+svd_dx_16,8,dx_194133,Low back pain,-0.087848574
+svd_dx_16,9,dx_312437,Dyspnea,0.07505897
+svd_dx_16,10,dx_4306292,Upper abdominal pain,0.065242834
+svd_dx_17,1,dx_319835,Congestive heart failure,0.5301055
+svd_dx_17,2,dx_320128,Essential hypertension,0.439268
+svd_dx_17,3,dx_192671,Gastrointestinal hemorrhage,-0.4392236
+svd_dx_17,4,dx_316139,Heart failure,0.32429683
+svd_dx_17,5,dx_4307774,Acute lower respiratory tract infection,0.30160442
+svd_dx_17,6,dx_381316,Cerebrovascular accident,0.17075774
+svd_dx_17,7,dx_312437,Dyspnea,0.16977389
+svd_dx_17,8,dx_4182562,Lower abdominal pain,0.1419049
+svd_dx_17,9,dx_77670,Chest pain,-0.08296232
+svd_dx_17,10,dx_255848,Pneumonia,0.081654236
+svd_dx_18,1,dx_4182562,Lower abdominal pain,0.9554732
+svd_dx_18,2,dx_4168216,Pelvic and perineal pain,-0.1277831
+svd_dx_18,3,dx_320128,Essential hypertension,-0.1274912
+svd_dx_18,4,dx_4307774,Acute lower respiratory tract infection,-0.12354261
+svd_dx_18,5,dx_4310400,Acute appendicitis,0.10734472
+svd_dx_18,6,dx_319835,Congestive heart failure,-0.05653318
+svd_dx_18,7,dx_440457,Threatened miscarriage,-0.05634225
+svd_dx_18,8,dx_200219,Abdominal pain,-0.05289301
+svd_dx_18,9,dx_4169954,Genitourinary tract hemorrhage,-0.052271143
+svd_dx_18,10,dx_381316,Cerebrovascular accident,-0.046971448
+svd_dx_19,1,dx_4307774,Acute lower respiratory tract infection,0.8727942
+svd_dx_19,2,dx_320128,Essential hypertension,-0.37876144
+svd_dx_19,3,dx_255848,Pneumonia,0.17540255
+svd_dx_19,4,dx_319835,Congestive heart failure,-0.1408874
+svd_dx_19,5,dx_381316,Cerebrovascular accident,-0.10764408
+svd_dx_19,6,dx_257315,Bacterial pneumonia,0.10297206
+svd_dx_19,7,dx_316139,Heart failure,-0.08484067
+svd_dx_19,8,dx_4182562,Lower abdominal pain,0.050543126
+svd_dx_19,9,dx_260427,Common cold,-0.046420913
+svd_dx_19,10,dx_437663,Fever,-0.039478917
+svd_dx_20,1,dx_320128,Essential hypertension,0.60403854
+svd_dx_20,2,dx_319835,Congestive heart failure,-0.5413509
+svd_dx_20,3,dx_381316,Cerebrovascular accident,0.37017232
+svd_dx_20,4,dx_316139,Heart failure,-0.32226634
+svd_dx_20,5,dx_4307774,Acute lower respiratory tract infection,0.17512909
+svd_dx_20,6,dx_4062557,False labor,-0.13309294
+svd_dx_20,7,dx_312437,Dyspnea,-0.12853359
+svd_dx_20,8,dx_4306292,Upper abdominal pain,-0.08668452
+svd_dx_20,9,dx_4182562,Lower abdominal pain,0.081123576
+svd_dx_20,10,dx_4062558,False labor at or after 37 completed weeks of gestation,0.06572771
+svd_dx_21,1,dx_4062557,False labor,0.8573661
+svd_dx_21,2,dx_4062558,False labor at or after 37 completed weeks of gestation,-0.4305103
+svd_dx_21,3,dx_4066112,Delivery by emergency cesarean section,0.15847702
+svd_dx_21,4,dx_45757113,False labor before 37 completed weeks of gestation,0.12547413
+svd_dx_21,5,dx_320128,Essential hypertension,0.09657429
+svd_dx_21,6,dx_319835,Congestive heart failure,-0.07686721
+svd_dx_21,7,dx_4168216,Pelvic and perineal pain,-0.06675555
+svd_dx_21,8,dx_381316,Cerebrovascular accident,0.06675372
+svd_dx_21,9,dx_193277,Deliveries by cesarean,0.058180694
+svd_dx_21,10,dx_316139,Heart failure,-0.045716558
+svd_dx_22,1,dx_381316,Cerebrovascular accident,0.71179545
+svd_dx_22,2,dx_78619,Contusion of knee,-0.5882403
+svd_dx_22,3,dx_320128,Essential hypertension,-0.34058374
+svd_dx_22,4,dx_381591,Cerebrovascular disease,0.088860676
+svd_dx_22,5,dx_4306292,Upper abdominal pain,-0.067271344
+svd_dx_22,6,dx_319835,Congestive heart failure,0.06266947
+svd_dx_22,7,dx_380378,Epilepsy,0.046591397
+svd_dx_22,8,dx_377091,Seizure,0.04507163
+svd_dx_22,9,dx_316139,Heart failure,0.03614496
+svd_dx_22,10,dx_4307774,Acute lower respiratory tract infection,-0.035660602
+svd_dx_23,1,dx_78619,Contusion of knee,0.7998345
+svd_dx_23,2,dx_381316,Cerebrovascular accident,0.5089171
+svd_dx_23,3,dx_320128,Essential hypertension,-0.2826647
+svd_dx_23,4,dx_4307774,Acute lower respiratory tract infection,-0.065034375
+svd_dx_23,5,dx_381591,Cerebrovascular disease,0.06326723
+svd_dx_23,6,dx_319835,Congestive heart failure,0.049331795
+svd_dx_23,7,dx_377091,Seizure,0.039446548
+svd_dx_23,8,dx_73649,Contusion of finger,0.036280848
+svd_dx_23,9,dx_380378,Epilepsy,0.035237662
+svd_dx_23,10,dx_4214376,Hyperglycemia,0.03227066
+svd_dx_24,1,dx_4306292,Upper abdominal pain,0.9448395
+svd_dx_24,2,dx_198809,Acute cholecystitis,0.18986015
+svd_dx_24,3,dx_4145627,Biliary calculus,0.11542133
+svd_dx_24,4,dx_319835,Congestive heart failure,-0.11338282
+svd_dx_24,5,dx_4289526,Nonulcer dyspepsia,0.09873025
+svd_dx_24,6,dx_194991,Calculus of gallbladder with acute cholecystitis,0.09278908
+svd_dx_24,7,dx_78619,Contusion of knee,-0.063668914
+svd_dx_24,8,dx_316139,Heart failure,-0.05798957
+svd_dx_24,9,dx_199074,Acute pancreatitis,0.05471938
+svd_dx_24,10,dx_381316,Cerebrovascular accident,0.04921504
+svd_dx_25,1,dx_45757113,False labor before 37 completed weeks of gestation,0.9477616
+svd_dx_25,2,dx_4062557,False labor,-0.22089513
+svd_dx_25,3,dx_4062558,False labor at or after 37 completed weeks of gestation,-0.11408002
+svd_dx_25,4,dx_4168216,Pelvic and perineal pain,-0.085530035
+svd_dx_25,5,dx_194702,Premature rupture of membranes,0.07593096
+svd_dx_25,6,dx_4146482,Urinary tract infection in pregnancy,0.07125579
+svd_dx_25,7,dx_377091,Seizure,0.056751065
+svd_dx_25,8,dx_4081648,Acute vaginitis,0.050793134
+svd_dx_25,9,dx_73649,Contusion of finger,0.0457118
+svd_dx_25,10,dx_440457,Threatened miscarriage,-0.043993432
+svd_dx_26,1,dx_435613,Cellulitis,0.7547263
+svd_dx_26,2,dx_73649,Contusion of finger,0.44478303
+svd_dx_26,3,dx_4181064,Inflammatory disorder of extremity,0.39835623
+svd_dx_26,4,dx_4214376,Hyperglycemia,0.16270365
+svd_dx_26,5,dx_443600,Localized infection of skin AND/OR subcutaneous tissue,-0.11359573
+svd_dx_26,6,dx_4057580,Fracture of phalanx of finger,0.10796155
+svd_dx_26,7,dx_81723,Contusion of hand,0.07581976
+svd_dx_26,8,dx_4001450,Lumbago with sciatica,0.05649221
+svd_dx_26,9,dx_4054063,Open wound of finger,0.048950523
+svd_dx_26,10,dx_78619,Contusion of knee,-0.03907424
+svd_dx_27,1,dx_73649,Contusion of finger,0.85144347
+svd_dx_27,2,dx_435613,Cellulitis,-0.3984429
+svd_dx_27,3,dx_4181064,Inflammatory disorder of extremity,-0.20985147
+svd_dx_27,4,dx_4057580,Fracture of phalanx of finger,0.20488614
+svd_dx_27,5,dx_4054063,Open wound of finger,0.08688087
+svd_dx_27,6,dx_4214376,Hyperglycemia,-0.0807175
+svd_dx_27,7,dx_45757113,False labor before 37 completed weeks of gestation,-0.05839865
+svd_dx_27,8,dx_443600,Localized infection of skin AND/OR subcutaneous tissue,0.053688392
+svd_dx_27,9,dx_4001450,Lumbago with sciatica,-0.051361606
+svd_dx_27,10,dx_78619,Contusion of knee,-0.03642581
+svd_dx_28,1,dx_377091,Seizure,0.8456992
+svd_dx_28,2,dx_380378,Epilepsy,0.4922809
+svd_dx_28,3,dx_381316,Cerebrovascular accident,-0.11803893
+svd_dx_28,4,dx_255848,Pneumonia,0.066847935
+svd_dx_28,5,dx_45757113,False labor before 37 completed weeks of gestation,-0.066467315
+svd_dx_28,6,dx_4293175,"Mental state, behavior and/or psychosocial function finding",0.050203584
+svd_dx_28,7,dx_4307774,Acute lower respiratory tract infection,-0.048921473
+svd_dx_28,8,dx_4206148,Syncope and collapse,0.045221787
+svd_dx_28,9,dx_320128,Essential hypertension,-0.039991803
+svd_dx_28,10,dx_4338031,Mixed anxiety and depressive disorder,0.0352823
+svd_dx_29,1,dx_255848,Pneumonia,0.94549567
+svd_dx_29,2,dx_4307774,Acute lower respiratory tract infection,-0.2254838
+svd_dx_29,3,dx_257315,Bacterial pneumonia,0.14629735
+svd_dx_29,4,dx_377091,Seizure,-0.07858001
+svd_dx_29,5,dx_4214376,Hyperglycemia,0.06781762
+svd_dx_29,6,dx_312437,Dyspnea,0.06393598
+svd_dx_29,7,dx_319835,Congestive heart failure,-0.04955861
+svd_dx_29,8,dx_435613,Cellulitis,-0.03934981
+svd_dx_29,9,dx_317009,Asthma,0.038513668
+svd_dx_29,10,dx_260427,Common cold,-0.03849862
+svd_dx_30,1,dx_4001450,Lumbago with sciatica,0.9521688
+svd_dx_30,2,dx_4214376,Hyperglycemia,-0.2189162
+svd_dx_30,3,dx_194133,Low back pain,-0.12767538
+svd_dx_30,4,dx_198809,Acute cholecystitis,-0.1265452
+svd_dx_30,5,dx_81723,Contusion of hand,-0.048504077
+svd_dx_30,6,dx_4145627,Biliary calculus,-0.038943015
+svd_dx_30,7,dx_4306292,Upper abdominal pain,0.03660366
+svd_dx_30,8,dx_435613,Cellulitis,-0.026410062
+svd_dx_30,9,dx_320128,Essential hypertension,-0.024631225
+svd_dx_30,10,dx_138525,Pain in limb,0.02452448
+svd_dx_31,1,dx_198809,Acute cholecystitis,0.6323439
+svd_dx_31,2,dx_4214376,Hyperglycemia,0.6119101
+svd_dx_31,3,dx_4001450,Lumbago with sciatica,0.24179684
+svd_dx_31,4,dx_4145627,Biliary calculus,0.20554271
+svd_dx_31,5,dx_4306292,Upper abdominal pain,-0.20192236
+svd_dx_31,6,dx_194991,Calculus of gallbladder with acute cholecystitis,0.13794136
+svd_dx_31,7,dx_435613,Cellulitis,-0.13127844
+svd_dx_31,8,dx_81723,Contusion of hand,0.103383206
+svd_dx_31,9,dx_4181064,Inflammatory disorder of extremity,-0.06935704
+svd_dx_31,10,dx_255848,Pneumonia,-0.068603985
+svd_dx_32,1,dx_4214376,Hyperglycemia,0.6986399
+svd_dx_32,2,dx_198809,Acute cholecystitis,-0.60742253
+svd_dx_32,3,dx_4145627,Biliary calculus,-0.20747663
+svd_dx_32,4,dx_4306292,Upper abdominal pain,0.14747518
+svd_dx_32,5,dx_194991,Calculus of gallbladder with acute cholecystitis,-0.13534093
+svd_dx_32,6,dx_435613,Cellulitis,-0.12865783
+svd_dx_32,7,dx_81723,Contusion of hand,0.11271784
+svd_dx_32,8,dx_4181064,Inflammatory disorder of extremity,-0.06908286
+svd_dx_32,9,dx_4001450,Lumbago with sciatica,0.062779
+svd_dx_32,10,dx_4289526,Nonulcer dyspepsia,-0.056510765
+svd_dx_33,1,dx_81723,Contusion of hand,0.95144886
+svd_dx_33,2,dx_4134322,Fracture of distal end of radius,0.17886336
+svd_dx_33,3,dx_4214376,Hyperglycemia,-0.17711169
+svd_dx_33,4,dx_73075,Contusion of upper limb,0.12538238
+svd_dx_33,5,dx_73649,Contusion of finger,-0.07082105
+svd_dx_33,6,dx_4138301,Fracture of distal end of radius and ulna,0.036091894
+svd_dx_33,7,dx_4015352,Fracture of metacarpal bone,0.029751675
+svd_dx_33,8,dx_140273,Contusion of forearm,0.028525645
+svd_dx_33,9,dx_78619,Contusion of knee,-0.026303656
+svd_dx_33,10,dx_435613,Cellulitis,-0.023165246
+svd_dx_34,1,dx_4310400,Acute appendicitis,0.93935543
+svd_dx_34,2,dx_440448,Appendicitis,0.27658948
+svd_dx_34,3,dx_4182562,Lower abdominal pain,-0.12121174
+svd_dx_34,4,dx_444239,Postprocedural state finding,0.107934795
+svd_dx_34,5,dx_200219,Abdominal pain,-0.06455365
+svd_dx_34,6,dx_198809,Acute cholecystitis,0.059687503
+svd_dx_34,7,dx_4306292,Upper abdominal pain,-0.045971856
+svd_dx_34,8,dx_4241033,Acute abdomen,0.025981598
+svd_dx_34,9,dx_4066112,Delivery by emergency cesarean section,0.020118723
+svd_dx_34,10,dx_73075,Contusion of upper limb,-0.018597381
+svd_dx_35,1,dx_73075,Contusion of upper limb,0.9794765
+svd_dx_35,2,dx_81723,Contusion of hand,-0.13343439
+svd_dx_35,3,dx_4206148,Syncope and collapse,0.0781574
+svd_dx_35,4,dx_4133610,Fracture of upper end of humerus,0.06333748
+svd_dx_35,5,dx_4289526,Nonulcer dyspepsia,0.044600226
+svd_dx_35,6,dx_4237458,Fracture of clavicle,0.042318933
+svd_dx_35,7,dx_81175,Contusion of chest,0.034189172
+svd_dx_35,8,dx_138525,Pain in limb,0.024048038
+svd_dx_35,9,dx_4167229,Superficial injury of upper limb,0.023290822
+svd_dx_35,10,dx_4213373,Dislocation of shoulder joint,0.02279865
+svd_dx_36,1,dx_4206148,Syncope and collapse,0.9163848
+svd_dx_36,2,dx_4066112,Delivery by emergency cesarean section,-0.29469436
+svd_dx_36,3,dx_4289526,Nonulcer dyspepsia,0.1126999
+svd_dx_36,4,dx_377091,Seizure,-0.09613339
+svd_dx_36,5,dx_73075,Contusion of upper limb,-0.08296915
+svd_dx_36,6,dx_193277,Deliveries by cesarean,0.07972956
+svd_dx_36,7,dx_4062557,False labor,0.079457074
+svd_dx_36,8,dx_4062558,False labor at or after 37 completed weeks of gestation,0.077574566
+svd_dx_36,9,dx_380378,Epilepsy,0.06596662
+svd_dx_36,10,dx_319835,Congestive heart failure,-0.05320402
+svd_dx_37,1,dx_4066112,Delivery by emergency cesarean section,0.820539
+svd_dx_37,2,dx_4206148,Syncope and collapse,0.32805118
+svd_dx_37,3,dx_4062557,False labor,-0.2311069
+svd_dx_37,4,dx_193277,Deliveries by cesarean,-0.21912792
+svd_dx_37,5,dx_4062558,False labor at or after 37 completed weeks of gestation,-0.21642552
+svd_dx_37,6,dx_4128030,Delivery procedure,-0.13108319
+svd_dx_37,7,dx_45757113,False labor before 37 completed weeks of gestation,-0.11090478
+svd_dx_37,8,dx_45765728,Supervision of high risk pregnancy,0.09784374
+svd_dx_37,9,dx_194702,Premature rupture of membranes,0.069544524
+svd_dx_37,10,dx_441641,Delivery normal,-0.06688811
+svd_dx_38,1,dx_4054063,Open wound of finger,0.95540184
+svd_dx_38,2,dx_4167909,Injury of nail,0.2452031
+svd_dx_38,3,dx_73649,Contusion of finger,-0.121752135
+svd_dx_38,4,dx_4057580,Fracture of phalanx of finger,0.057144485
+svd_dx_38,5,dx_312437,Dyspnea,0.048802067
+svd_dx_38,6,dx_4319151,Traumatic amputation of finger,0.03366131
+svd_dx_38,7,dx_81723,Contusion of hand,-0.031765632
+svd_dx_38,8,dx_4216185,Open wound of upper limb,0.025115682
+svd_dx_38,9,dx_4289526,Nonulcer dyspepsia,-0.017751249
+svd_dx_38,10,dx_437038,Blood in urine,0.017201638
+svd_dx_39,1,dx_380378,Epilepsy,0.54343
+svd_dx_39,2,dx_312437,Dyspnea,0.50972766
+svd_dx_39,3,dx_4289526,Nonulcer dyspepsia,-0.4688343
+svd_dx_39,4,dx_377091,Seizure,-0.3330615
+svd_dx_39,5,dx_319835,Congestive heart failure,-0.1922257
+svd_dx_39,6,dx_257315,Bacterial pneumonia,0.17825471
+svd_dx_39,7,dx_255848,Pneumonia,-0.09035782
+svd_dx_39,8,dx_198809,Acute cholecystitis,0.0839829
+svd_dx_39,9,dx_316139,Heart failure,0.07876112
+svd_dx_39,10,dx_4145627,Biliary calculus,-0.0668799
+svd_dx_40,1,dx_312437,Dyspnea,0.6821846
+svd_dx_40,2,dx_4289526,Nonulcer dyspepsia,0.51178294
+svd_dx_40,3,dx_380378,Epilepsy,-0.27138188
+svd_dx_40,4,dx_257315,Bacterial pneumonia,0.2473787
+svd_dx_40,5,dx_319835,Congestive heart failure,-0.21382695
+svd_dx_40,6,dx_377091,Seizure,0.14531708
+svd_dx_40,7,dx_255848,Pneumonia,-0.111804314
+svd_dx_40,8,dx_198809,Acute cholecystitis,-0.10965026
+svd_dx_40,9,dx_4145627,Biliary calculus,0.09256994
+svd_dx_40,10,dx_134461,Tietze's disease,0.07004388
+svd_dx_41,1,dx_4289526,Nonulcer dyspepsia,0.62846816
+svd_dx_41,2,dx_380378,Epilepsy,0.59192795
+svd_dx_41,3,dx_377091,Seizure,-0.33989242
+svd_dx_41,4,dx_312437,Dyspnea,-0.20469354
+svd_dx_41,5,dx_4206148,Syncope and collapse,-0.15463246
+svd_dx_41,6,dx_4145627,Biliary calculus,0.15148023
+svd_dx_41,7,dx_198809,Acute cholecystitis,-0.14437251
+svd_dx_41,8,dx_4306292,Upper abdominal pain,-0.062113304
+svd_dx_41,9,dx_317009,Asthma,-0.048728056
+svd_dx_41,10,dx_319835,Congestive heart failure,0.047656383
+svd_dx_42,1,dx_316139,Heart failure,0.80184376
+svd_dx_42,2,dx_319835,Congestive heart failure,-0.46020895
+svd_dx_42,3,dx_257315,Bacterial pneumonia,-0.3216673
+svd_dx_42,4,dx_312437,Dyspnea,-0.07954227
+svd_dx_42,5,dx_255848,Pneumonia,0.070191145
+svd_dx_42,6,dx_138525,Pain in limb,0.06921385
+svd_dx_42,7,dx_260125,Acute bronchiolitis,-0.056254525
+svd_dx_42,8,dx_317009,Asthma,-0.05093552
+svd_dx_42,9,dx_380378,Epilepsy,-0.048334494
+svd_dx_42,10,dx_4068155,Atrial arrhythmia,0.04792646
+svd_dx_43,1,dx_257315,Bacterial pneumonia,0.7463129
+svd_dx_43,2,dx_312437,Dyspnea,-0.32061157
+svd_dx_43,3,dx_437038,Blood in urine,-0.31884333
+svd_dx_43,4,dx_260125,Acute bronchiolitis,0.2725076
+svd_dx_43,5,dx_316139,Heart failure,0.2576793
+svd_dx_43,6,dx_4145627,Biliary calculus,-0.14276473
+svd_dx_43,7,dx_255848,Pneumonia,-0.11672122
+svd_dx_43,8,dx_192450,Retention of urine,-0.10107034
+svd_dx_43,9,dx_319835,Congestive heart failure,-0.08770335
+svd_dx_43,10,dx_4307774,Acute lower respiratory tract infection,-0.06071622
+svd_dx_44,1,dx_437038,Blood in urine,0.76402533
+svd_dx_44,2,dx_192450,Retention of urine,0.31827718
+svd_dx_44,3,dx_257315,Bacterial pneumonia,0.28674662
+svd_dx_44,4,dx_4145627,Biliary calculus,0.21577507
+svd_dx_44,5,dx_312437,Dyspnea,-0.1736069
+svd_dx_44,6,dx_260125,Acute bronchiolitis,0.1479516
+svd_dx_44,7,dx_4289526,Nonulcer dyspepsia,-0.1398953
+svd_dx_44,8,dx_198803,Benign prostatic hyperplasia,0.13958724
+svd_dx_44,9,dx_444239,Postprocedural state finding,0.110438466
+svd_dx_44,10,dx_201620,Kidney stone,0.106117696
+svd_dx_45,1,dx_4145627,Biliary calculus,0.76618767
+svd_dx_45,2,dx_198809,Acute cholecystitis,-0.31891382
+svd_dx_45,3,dx_437038,Blood in urine,-0.30593914
+svd_dx_45,4,dx_194991,Calculus of gallbladder with acute cholecystitis,0.2823415
+svd_dx_45,5,dx_4289526,Nonulcer dyspepsia,-0.21292499
+svd_dx_45,6,dx_4338031,Mixed anxiety and depressive disorder,0.15416181
+svd_dx_45,7,dx_192450,Retention of urine,-0.13519739
+svd_dx_45,8,dx_260125,Acute bronchiolitis,0.11331688
+svd_dx_45,9,dx_36716712,Calculus of gallbladder without cholecystitis or cholangitis,0.08900435
+svd_dx_45,10,dx_192956,Cholecystitis,0.06669016
+svd_dx_46,1,dx_4338031,Mixed anxiety and depressive disorder,0.72376925
+svd_dx_46,2,dx_440448,Appendicitis,0.60794455
+svd_dx_46,3,dx_4310400,Acute appendicitis,-0.18369333
+svd_dx_46,4,dx_134461,Tietze's disease,0.14151986
+svd_dx_46,5,dx_4145627,Biliary calculus,-0.10758217
+svd_dx_46,6,dx_442077,Anxiety disorder,0.0815371
+svd_dx_46,7,dx_4146482,Urinary tract infection in pregnancy,-0.051414154
+svd_dx_46,8,dx_194991,Calculus of gallbladder with acute cholecystitis,-0.04686525
+svd_dx_46,9,dx_260125,Acute bronchiolitis,0.0447199
+svd_dx_46,10,dx_80573,Contusion of ankle,0.040873308
+svd_dx_47,1,dx_440448,Appendicitis,0.595689
+svd_dx_47,2,dx_260125,Acute bronchiolitis,0.52187186
+svd_dx_47,3,dx_4338031,Mixed anxiety and depressive disorder,-0.5165418
+svd_dx_47,4,dx_4310400,Acute appendicitis,-0.17833763
+svd_dx_47,5,dx_257315,Bacterial pneumonia,-0.14256139
+svd_dx_47,6,dx_134461,Tietze's disease,-0.086950764
+svd_dx_47,7,dx_81175,Contusion of chest,-0.08253582
+svd_dx_47,8,dx_442077,Anxiety disorder,-0.071303904
+svd_dx_47,9,dx_194991,Calculus of gallbladder with acute cholecystitis,0.059684325
+svd_dx_47,10,dx_4146482,Urinary tract infection in pregnancy,0.056818288
+svd_dx_48,1,dx_260125,Acute bronchiolitis,0.7631208
+svd_dx_48,2,dx_440448,Appendicitis,-0.40642264
+svd_dx_48,3,dx_4338031,Mixed anxiety and depressive disorder,0.26662835
+svd_dx_48,4,dx_257315,Bacterial pneumonia,-0.25619552
+svd_dx_48,5,dx_134461,Tietze's disease,0.15360695
+svd_dx_48,6,dx_4310400,Acute appendicitis,0.12084458
+svd_dx_48,7,dx_4134322,Fracture of distal end of radius,0.10331959
+svd_dx_48,8,dx_312327,Acute myocardial infarction,-0.09676662
+svd_dx_48,9,dx_194991,Calculus of gallbladder with acute cholecystitis,-0.0926474
+svd_dx_48,10,dx_4145627,Biliary calculus,-0.088420324
+svd_dx_49,1,dx_81175,Contusion of chest,0.7191528
+svd_dx_49,2,dx_134461,Tietze's disease,-0.64766014
+svd_dx_49,3,dx_4146482,Urinary tract infection in pregnancy,0.13895574
+svd_dx_49,4,dx_4338031,Mixed anxiety and depressive disorder,0.083659865
+svd_dx_49,5,dx_80573,Contusion of ankle,0.07575593
+svd_dx_49,6,dx_138525,Pain in limb,-0.055794258
+svd_dx_49,7,dx_4081648,Acute vaginitis,0.05550874
+svd_dx_49,8,dx_312437,Dyspnea,0.04600205
+svd_dx_49,9,dx_321318,Angina pectoris,-0.043706726
+svd_dx_49,10,dx_4243161,Open wound of head,-0.04178891

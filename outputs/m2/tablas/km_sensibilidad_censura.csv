@@ -1,0 +1,9 @@
+servicio,escenario,n,censurados,mediana_KM_h,IC95,S(umbral P75),media_simple_h
+Hospitalización,A. Ingenuo (todos como evento),49423,0,70.84,"[70.35, 71.40]",0.2596564352629342,124.3889870719211
+Hospitalización,B. Abiertos en corte = censurados,49423,176,70.92,"[70.42, 71.48]",0.2603829521984702,124.3889870719211
+Hospitalización,C. Excluir riesgo de truncamiento,48499,14,70.78,"[70.29, 71.32]",0.25934555351656735,124.53445172409054
+Hospitalización,D. Solo periodo estable (recomendado),44417,2,70.54,"[70.01, 71.08]",0.25670351442015427,123.79664829282083
+Urgencias / observación,A. Ingenuo (todos como evento),493320,0,0.0,"[0.00, 0.00]",0.2552075731776538,10.036540423389821
+Urgencias / observación,B. Abiertos en corte = censurados,493320,290,0.0,"[0.00, 0.00]",0.2552075731776538,10.036540423389821
+Urgencias / observación,C. Excluir riesgo de truncamiento,484772,22,0.0,"[0.00, 0.00]",0.2546702367298445,9.95473869732117
+Urgencias / observación,D. Solo periodo estable (recomendado),442986,4,0.0,"[0.00, 0.00]",0.2561909405714853,9.89493784227944

@@ -1,0 +1,63 @@
+[09:14:31] OOF: 541,260 snapshots · 97,024 pacientes · ganador lightgbm · top 2 random_forest
+[09:22:26] Prueba 1 lista (7.9 min)
+
+=== PRUEBA 1 · DeLong pareado (ΔAUC-ROC = ganador − baseline) ===
+     baseline      n  auc_ganador  auc_baseline  delta_auc  ic95_bca_inf  ic95_bca_sup  z_conglomerados  log10_p_conglomerados  inflacion_se  p_holm
+random_forest 541260       0.7418        0.7364     0.0053        0.0049        0.0057          24.4571              -131.3736        1.4948     0.0
+      svm_rbf 541260       0.7418        0.7270     0.0147        0.0139        0.0156          32.9131              -236.8448        1.5320     0.0
+         cart 541260       0.7418        0.7222     0.0196        0.0188        0.0204          47.3196              -487.9982        1.4970     0.0
+ logreg_lasso 541260       0.7418        0.7146     0.0271        0.0261        0.0282          50.4113              -553.6372        1.5380     0.0
+          knn 108495       0.7440        0.7054     0.0386        0.0356        0.0413          26.4468              -153.4012        1.5081     0.0
+  naive_bayes 541260       0.7418        0.6643     0.0774        0.0755        0.0793          84.5411             -1554.0201        1.5080     0.0
+  (p = 0,0 en pantalla es desbordamiento numérico: ver z y log10 p; el SE por conglomerados es 1.51× el del DeLong clásico, que ignora la correlación entre snapshots del paciente)
+  lightgbm vs random_forest: SUPERIORIDAD ESTADÍSTICA (p < 0,05) · ΔAUC = +0.0053 · magnitud pequeña: IC BCa [0.0049; 0.0057] no supera 0,01
+  lightgbm vs svm_rbf: SUPERIORIDAD ESTADÍSTICA (p < 0,05) · ΔAUC = +0.0147 · relevante (IC BCa ≥ 0,01)
+  lightgbm vs cart: SUPERIORIDAD ESTADÍSTICA (p < 0,05) · ΔAUC = +0.0196 · relevante (IC BCa ≥ 0,01)
+  lightgbm vs logreg_lasso: SUPERIORIDAD ESTADÍSTICA (p < 0,05) · ΔAUC = +0.0271 · relevante (IC BCa ≥ 0,01)
+  lightgbm vs knn: SUPERIORIDAD ESTADÍSTICA (p < 0,05) · ΔAUC = +0.0386 · relevante (IC BCa ≥ 0,01)
+  lightgbm vs naive_bayes: SUPERIORIDAD ESTADÍSTICA (p < 0,05) · ΔAUC = +0.0774 · relevante (IC BCa ≥ 0,01)
+
+=== PRUEBA 2 · Friedman + Nemenyi (AUC-ROC, 5 pliegues × 7 modelos, 108,495 filas comunes) ===
+         lightgbm  random_forest  svm_rbf    cart  logreg_lasso     knn  naive_bayes
+pliegue                                                                             
+1          0.7439         0.7381   0.7276  0.7251        0.7128  0.7028       0.6676
+2          0.7483         0.7453   0.7318  0.7291        0.7207  0.7083       0.6718
+3          0.7432         0.7382   0.7290  0.7239        0.7160  0.7027       0.6614
+4          0.7446         0.7404   0.7294  0.7260        0.7166  0.7096       0.6731
+5          0.7404         0.7361   0.7271  0.7228        0.7121  0.7042       0.6596
+Friedman χ² = 30.00, p = 3.93e-05 · Iman-Davenport F = ∞ (concordancia perfecta entre pliegues) · W de Kendall = 1.000 · CD Nemenyi = 4.03
+Rangos medios: lightgbm 1.0, random_forest 2.0, svm_rbf 3.0, cart 4.0, logreg_lasso 5.0, knn 6.0, naive_bayes 7.0
+  Friedman: SUPERIORIDAD ESTADÍSTICA (p < 0,05)
+  Nemenyi lightgbm vs random_forest: p = 0.991 → EQUIVALENCIA ESTADÍSTICA según la rúbrica (p ≥ 0,05): no se demuestra diferencia (formalmente no es una prueba de equivalencia)
+  Nemenyi lightgbm vs svm_rbf: p = 0.766 → EQUIVALENCIA ESTADÍSTICA según la rúbrica (p ≥ 0,05): no se demuestra diferencia (formalmente no es una prueba de equivalencia)
+  Nemenyi lightgbm vs cart: p = 0.298 → EQUIVALENCIA ESTADÍSTICA según la rúbrica (p ≥ 0,05): no se demuestra diferencia (formalmente no es una prueba de equivalencia)
+  Nemenyi lightgbm vs logreg_lasso: p = 0.053 → EQUIVALENCIA ESTADÍSTICA según la rúbrica (p ≥ 0,05): no se demuestra diferencia (formalmente no es una prueba de equivalencia)
+  Nemenyi lightgbm vs knn: p = 0.00472 → SUPERIORIDAD ESTADÍSTICA (p < 0,05)
+  Nemenyi lightgbm vs naive_bayes: p = 0.000227 → SUPERIORIDAD ESTADÍSTICA (p < 0,05)
+  (Sensibilidad, 6 modelos en todas las filas: Friedman p = 0.000139, W = 1.000)
+
+=== PRUEBA 3 · Wilcoxon de rangos con signo, lightgbm vs random_forest (Holm entre 4 métricas) ===
+                           particiones  metrica  media_top1  media_top2  mediana_diferencia  a_mejor_en  n_pares      p  p_holm  biserial_rangos  p_minimo_alcanzable
+50 particiones de pacientes (decisión)  auc_roc      0.7418      0.7365              0.0052          50       50 0.0000    0.00           1.0000               0.0000
+50 particiones de pacientes (decisión)   auc_pr      0.7553      0.7500              0.0054          49       50 0.0000    0.00           0.9984               0.0000
+50 particiones de pacientes (decisión)    brier      0.2046      0.2069              0.0023          50       50 0.0000    0.00           1.0000               0.0000
+50 particiones de pacientes (decisión) log_loss      0.5938      0.5988              0.0051          50       50 0.0000    0.00           1.0000               0.0000
+                            5 pliegues  auc_roc      0.7418      0.7364              0.0055           5        5 0.0625    0.25           1.0000               0.0625
+                            5 pliegues   auc_pr      0.7552      0.7499              0.0053           5        5 0.0625    0.25           1.0000               0.0625
+                            5 pliegues    brier      0.2046      0.2069              0.0023           5        5 0.0625    0.25           1.0000               0.0625
+                            5 pliegues log_loss      0.5938      0.5988              0.0051           5        5 0.0625    0.25           1.0000               0.0625
+  [50 particiones de pacientes (decisión)] auc_roc: SUPERIORIDAD ESTADÍSTICA (p < 0,05)
+  [50 particiones de pacientes (decisión)] auc_pr: SUPERIORIDAD ESTADÍSTICA (p < 0,05)
+  [50 particiones de pacientes (decisión)] brier: SUPERIORIDAD ESTADÍSTICA (p < 0,05)
+  [50 particiones de pacientes (decisión)] log_loss: SUPERIORIDAD ESTADÍSTICA (p < 0,05)
+  [5 pliegues] auc_roc: EQUIVALENCIA ESTADÍSTICA según la rúbrica (p ≥ 0,05): no se demuestra diferencia (formalmente no es una prueba de equivalencia) (con 5 pares el p mínimo posible es 0,0625)
+  [5 pliegues] auc_pr: EQUIVALENCIA ESTADÍSTICA según la rúbrica (p ≥ 0,05): no se demuestra diferencia (formalmente no es una prueba de equivalencia) (con 5 pares el p mínimo posible es 0,0625)
+  [5 pliegues] brier: EQUIVALENCIA ESTADÍSTICA según la rúbrica (p ≥ 0,05): no se demuestra diferencia (formalmente no es una prueba de equivalencia) (con 5 pares el p mínimo posible es 0,0625)
+  [5 pliegues] log_loss: EQUIVALENCIA ESTADÍSTICA según la rúbrica (p ≥ 0,05): no se demuestra diferencia (formalmente no es una prueba de equivalencia) (con 5 pares el p mínimo posible es 0,0625)
+
+=== VEREDICTO FINAL ===
+Prueba 1 (DeLong por conglomerados + Holm): lightgbm supera estadísticamente a 6/6 baselines (random_forest, svm_rbf, cart, logreg_lasso, knn, naive_bayes).
+Prueba 2 (Friedman + Nemenyi): SUPERIORIDAD ESTADÍSTICA (p < 0,05); el post-hoc separa a lightgbm de 2/6 modelos (potencia limitada con 5 pliegues).
+Prueba 3 (Wilcoxon, 50 particiones): lightgbm vs random_forest → auc_roc: superior (p_Holm = 7.11e-15); auc_pr: superior (p_Holm = 7.11e-15); brier: superior (p_Holm = 7.11e-15); log_loss: superior (p_Holm = 7.11e-15)
+[09:22:31] Listo
+EXIT 0

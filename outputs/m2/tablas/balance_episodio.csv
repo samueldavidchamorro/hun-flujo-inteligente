@@ -1,0 +1,5 @@
+servicio,particion,n,positivos,tasa
+hospitalizacion,entrenamiento,34635,8658,0.24997834560415763
+hospitalizacion,prueba,9782,2742,0.28031077489266
+urgencias_observacion,entrenamiento,350296,87574,0.25
+urgencias_observacion,prueba,92690,25883,0.2792426367461431

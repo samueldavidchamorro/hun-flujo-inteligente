@@ -1,0 +1,7 @@
+desde,hacia,n,prob,espera_p50_h,espera_p75_h,espera_p90_h,frac_solapada,duracion_desde_p50_h
+ambulatorio,urgencias_observacion,10520,0.011,0.067,0.088,0.135,0.0,0.0
+ambulatorio,ambulatorio,2303,0.0024,1.272,7.625,120.322,0.0,0.0
+hospitalizacion,hospitalizacion,24885,0.3597,0.0,0.0,0.0,0.044,24.696
+urgencias_ingreso,urgencias_observacion,273768,0.7698,-0.0,-0.0,-0.0,0.974,0.062
+urgencias_observacion,urgencias_observacion,293497,0.4037,0.0,0.0,0.0,0.01,2.186
+urgencias_observacion,hospitalizacion,42924,0.059,0.0,0.0,18.21,0.0,7.642
